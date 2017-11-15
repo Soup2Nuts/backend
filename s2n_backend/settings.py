@@ -25,7 +25,7 @@ SECRET_KEY = 'wn9pcsb77@%ksrj$%r(w+kvuvch46_t74f2(%o(72a+d+xhq*g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.1.240', 'soup2nuts.us']
 
 
 # Application definition
