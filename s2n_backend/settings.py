@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 
+#Set to false to use actual database
+TEST_DATABASE = True
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -25,13 +28,15 @@ SECRET_KEY = 'wn9pcsb77@%ksrj$%r(w+kvuvch46_t74f2(%o(72a+d+xhq*g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.240', 'soup2nuts.us', '%', '0.0.0.0', '127.0.0.1']
+ALLOWED_HOSTS = [] if TEST_DATABASE else ['192.168.1.240', 'soup2nuts.us', '%', '0.0.0.0', '127.0.0.1']
+
 
 CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
 INSTALLED_APPS = [
+    'pantry.apps.PantryConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -78,16 +83,24 @@ WSGI_APPLICATION = 's2n_backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 's2n',
-        'USER': 's2n',
-        'PASSWORD': 'Bananaphone1!',
-        'HOST': '192.168.1.240',
-        'PORT': '3306'
+if(TEST_DATABASE):
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 's2n',
+            'USER': 's2n',
+            'PASSWORD': 'Bananaphone1!',
+            'HOST': '192.168.1.240',
+            'PORT': '3306'
+        }
+    }
 
 
 # Password validation
@@ -114,7 +127,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/New_York'
 
 USE_I18N = True
 
