@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'backend.apps.BackendConfig',
+    #'backend.apps.BackendConfig',
     'corsheaders',
     'rest_framework'
     'pantry'
@@ -121,14 +121,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTH_USER_MODEL = 'backend.Account'
+AUTH_USER_MODEL = 'login.Account'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'America/New York'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
