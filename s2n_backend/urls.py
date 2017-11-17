@@ -14,12 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url, include
-from rest_framework import routers
+from rest_framework import routers # rest_framework_nested ?
 
 from backend import views
 
 router = routers.DefaultRouter()
-router.register(r'users', views.UserViewSet)
+router.register(r'users', views.AccountViewSet)
+router.register(r'login', views.LoginView)
+router.register(r'logout', views.LogoutView)
 router.register(r'groups', views.GroupViewSet)
 router.register(r'ingredients', views.IngredientViewSet)
 
