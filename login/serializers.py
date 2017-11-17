@@ -1,8 +1,6 @@
-from django.contrib.auth.models import Group
 from django.contrib.auth import update_session_auth_hash
 from rest_framework import serializers
-from .models import Ingredient
-from .models import Account
+from login.models import Account
 
 
 class AccountSerializer(serializers.HyperlinkedModelSerializer):
@@ -35,13 +33,5 @@ class AccountSerializer(serializers.HyperlinkedModelSerializer):
         	return instance
 
 
-class GroupSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Group
-        fields = ('url', 'name')
 
 
-class IngredientSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Ingredient
-        fields = ('url', 'name')

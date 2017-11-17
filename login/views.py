@@ -1,9 +1,9 @@
-from django.contrib.auth.models import Account, Group
+from django.contrib.auth.models import Account
 from django.contrib.auth import authenticate, login, logout
 from rest_framework import permissions, viewsets
 
-from backend.serializers import AccountSerializer, GroupSerializer, IngredientSerializer
-from .models import Ingredient
+from login.serializers import AccountSerializer
+from login.models import Ingredient
 
 class AccountViewSet(viewsets.ModelViewSet):
     """
@@ -70,17 +70,4 @@ class LogoutView(views.APIView):
 
         return Response({}, status=status.HTTP_204_NO_CONTENT)
 
-class GroupViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows groups to be viewed or edited
-    """
-    queryset = Group.objects.all()
-    serializer_class = GroupSerializer
 
-
-class IngredientViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint that allows ingredients to be viewed or edited
-    """
-    queryset = Ingredient.objects.all()
-    serializer_class = IngredientSerializer

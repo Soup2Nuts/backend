@@ -16,12 +16,12 @@ Including another URLconf
 from django.conf.urls import url, include
 from rest_framework import routers # rest_framework_nested ?
 
-from backend import views
+from login.views import views
 
 router = routers.DefaultRouter()
-router.register(r'users', views.AccountViewSet)
-router.register(r'login', views.LoginView)
-router.register(r'logout', views.LogoutView)
+router.register(r'users', login.views.AccountViewSet)
+router.register(r'login', login.views.LoginView)
+router.register(r'logout', login.views.LogoutView)
 router.register(r'groups', views.GroupViewSet)
 router.register(r'ingredients', views.IngredientViewSet)
 
@@ -29,5 +29,6 @@ router.register(r'ingredients', views.IngredientViewSet)
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
     url(r'^', include(router.urls)),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^admin/', admin.site.urls)
 ]
