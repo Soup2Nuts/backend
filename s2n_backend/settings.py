@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'backend.apps.BackendConfig',
     'corsheaders',
     'rest_framework'
+    'authentication'
 ]
 
 MIDDLEWARE = [
@@ -134,3 +135,6 @@ REST_FRAMEWORK = {
     ],
     'PAGE_SIZE' : 10
 }
+
+AUTH_USER_MODEL = 'backend.Account'
+
