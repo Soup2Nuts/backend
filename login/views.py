@@ -1,9 +1,8 @@
-from django.contrib.auth.models import Account
+from login.models import Account
 from django.contrib.auth import authenticate, login, logout
-from rest_framework import permissions, viewsets
-
 from login.serializers import AccountSerializer
-from login.models import Ingredient
+from rest_framework import status, views, permissions, viewsets
+from rest_framework.response import Response
 
 class AccountViewSet(viewsets.ModelViewSet):
     """
@@ -64,10 +63,8 @@ class LoginView(views.APIView):
 
 class LogoutView(views.APIView):
     permission_classes = (permissions.IsAuthenticated,) # remove comma?
-    
+
     def post(self, request, format=None):
         logout(request)
 
         return Response({}, status=status.HTTP_204_NO_CONTENT)
-
-

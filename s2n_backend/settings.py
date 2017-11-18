@@ -35,13 +35,13 @@ CORS_ORIGIN_ALLOW_ALL = True
 # Application definition
 
 INSTALLED_APPS = [
+    'login.apps.LoginConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'login.apps.BackendConfig',
     'corsheaders',
     'rest_framework'
 ]
@@ -140,10 +140,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES' : [
-        #'rest_framework.permissions.IsAdminUser',
-    ],
-    'PAGE_SIZE' : 10
-}
-
+# REST_FRAMEWORK = {
+#     'DEFAULT_PERMISSION_CLASSES' : [
+#         #'rest_framework.permissions.IsAdminUser',
+#     ],
+#     'PAGE_SIZE' : 10
+# }
