@@ -20,6 +20,6 @@ class Recipe(models.Model):
         s += 'Cuisines: ' + str(self.cuisines) + '\n'
         s += 'Courses: ' + str(self.courses) + '\n'
         s += 'Ingredients:\n'
-        for ingredient in self.ingredients:
+        for ingredient in self.ingredients.split(', '):
             s+= str(ingredient) + '\n'
         return s

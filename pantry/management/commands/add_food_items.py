@@ -1,3 +1,4 @@
+#Use python manage.py add_food_items pantry/data/food_items.txt
 from django.core.management.base import BaseCommand, CommandError
 from pantry.models import *
 
@@ -17,4 +18,4 @@ class Command(BaseCommand):
                         item.save()
                 self.stdout.write(self.style.SUCCESS('Successfully added food from "%s"' % text_file))
             except OSError:
-                self.stdout.write(self.style.FAILURE('Failed to open file "%s"' % text_file))
+                self.stdout.write('Failed to open file "%s"' % text_file)
