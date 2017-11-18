@@ -29,21 +29,14 @@ SECRET_KEY = 'wn9pcsb77@%ksrj$%r(w+kvuvch46_t74f2(%o(72a+d+xhq*g'
 DEBUG = True
 
 ALLOWED_HOSTS = [] if TEST_DATABASE else ['192.168.1.240', 'soup2nuts.us', '%', '0.0.0.0', '127.0.0.1']
-<<<<<<< HEAD
-=======
-
->>>>>>> branch-katie-test
 
 CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
 INSTALLED_APPS = [
-<<<<<<< HEAD
     'login.apps.LoginConfig',
-=======
     'pantry.apps.PantryConfig',
->>>>>>> branch-katie-test
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -148,18 +141,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-<<<<<<< HEAD
+
 # REST_FRAMEWORK = {
 #     'DEFAULT_PERMISSION_CLASSES' : [
 #         #'rest_framework.permissions.IsAdminUser',
 #     ],
 #     'PAGE_SIZE' : 10
 # }
-=======
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES' : [
-        #'rest_framework.permissions.IsAdminUser',
-    ],
-    'PAGE_SIZE' : 10
-}
->>>>>>> branch-katie-test
