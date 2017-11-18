@@ -20,10 +20,10 @@ from django.contrib import admin
 from login.views import *
 from pantry.views import *
 
-router = routers.DefaultRouter()
+
 
 router = routers.DefaultRouter()
-router.register(r'users', viewset=AccountViewSet)
+#router.register(r'users', viewset=AccountViewSet)
 #router.register(r'groups', views.GroupViewSet)
 router.register(prefix='foods', viewset=FoodItemViewSet)
 router.register(prefix='recipes', viewset=RecipeViewSet)
@@ -36,6 +36,7 @@ urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^admin/', admin.site.urls),
+    url(r'^accounts/login/', LoginView.as_view()),
     url(r'^login/$', LoginView.as_view()),
     url(r'^logout/$', LogoutView.as_view()),
 ]

@@ -7,6 +7,9 @@ class FoodItem(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        ordering = ('name',)
+
 class Course(models.Model):
     #primary key field is read-only, trying to change the primary_key field will create a new object
     name = models.CharField(max_length = 200, primary_key=True)
@@ -49,5 +52,5 @@ class Recipe(models.Model):
         s += 'Source: ' + self.source + '\n'
         s += 'Cuisines: ' + str(self.cuisines) + '\n'
         s += 'Courses: ' + str(self.courses) + '\n'
-        s += 'Ingredients: '  + str(self.ingredients) + '\n'
+        s += 'Ingredients: '  + str(self.ingredients)
         return s
