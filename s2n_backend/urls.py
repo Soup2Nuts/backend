@@ -20,7 +20,7 @@ from login.views import (AccountViewSet, LoginView, LogoutView)
 
 router = routers.DefaultRouter()
 router.register(r'users', AccountViewSet)
-router.register(r'login', LoginView, 'Login')
+router.register(r'login', LoginView, 'account-detail')
 router.register(r'logout', LogoutView, 'Logout')
 #router.register(r'groups', views.GroupViewSet)
 #router.register(r'ingredients', views.IngredientViewSet)

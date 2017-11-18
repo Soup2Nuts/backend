@@ -9,8 +9,8 @@ class AccountSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Account
-        fields = ('url', 'username', 'firstName', 'lastName', 'createdAt', 'updatedAt', 'password', 'confirmPassword')
-        readOnlyFields = ('createdAt', 'updatedAt')
+        fields = ('url', 'username', 'firstName', 'lastName', 'date_joined', 'last_login', 'password', 'confirmPassword')
+        readOnlyFields = ('date_joined', 'last_login')
 
         def create(self, validatedData):
             return User.objects.create(**validatedData)

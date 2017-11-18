@@ -16,7 +16,7 @@ class AccountManager(BaseUserManager):
 		return account
 
 	def create_superuser(self, username, password):
-		account = self.createUser(username, password)
+		account = self.create_user(username, password)
 
 		account.isAdmin	= True;
 		account.save()
@@ -31,9 +31,9 @@ class Account(AbstractBaseUser):
 
 	isAdmin = models.BooleanField(default=False)
 
-	created_at = models.DateTimeField(auto_now_add=True)
+	date_joined = models.DateTimeField(auto_now_add=True)
 
-	updated_at = models.DateTimeField(auto_now=True)	
+	last_login = models.DateTimeField(auto_now=True)	
 
 	objects = AccountManager()
 
@@ -45,4 +45,7 @@ class Account(AbstractBaseUser):
 
 	def get_full_name(self):
 		return ' '.join([self.firstName, self.lastName])
+
+	def get_short_name(self):
+		return self.firstName
 
