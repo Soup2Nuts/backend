@@ -1,4 +1,5 @@
 from django.db import models
+from login.models import Account
 
 class FoodItem(models.Model):
     #primary key field is read-only, trying to change the primary_key field will create a new object
@@ -22,7 +23,7 @@ class Course(models.Model):
 
 class Ingredient(models.Model):
     quantity = models.CharField(max_length = 50)
-    name = models.OneToOneField(FoodItem, on_delete=models.CASCADE)
+    name = models.ForeignKey(FoodItem, on_delete=models.CASCADE)
     notes = models.CharField(max_length = 500, null=True, blank=True)
 
     def __str__(self):
@@ -54,3 +55,14 @@ class Recipe(models.Model):
         s += 'Courses: ' + str(self.courses) + '\n'
         s += 'Ingredients: '  + str(self.ingredients)
         return s
+
+class PantryItem(models.Model):
+    item = models.ForeignKey(FoodItem, on_delete=models.CASCADE)
+    owner = models.ForeignKey(Account, related_name = 'pantry', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.item.name
+
+    class Meta:
+        ordering = ('item',)
+        unique_together = ('item', 'owner',)

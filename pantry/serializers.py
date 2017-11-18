@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import *
-
+from login.serializers import AccountSerializer
 
 class FoodItemSerializer(serializers.ModelSerializer):
     """ Serializer to represent the FoodItem model """
@@ -51,3 +51,13 @@ class RecipeSerializer(serializers.ModelSerializer):
             ingredient, created = Ingredient.objects.get_or_create(name=ingredient['name'])
             recipe.ingredients.add(ingredient)
         return instance
+
+class PantryItemSerializer(serializers.ModelSerializer):
+    """ Serializer to represent the PantryItem model """
+
+    class Meta:
+        model = PantryItem
+        fields = ("item", "owner")
+
+    def create(self, validatedData):
+    	return PantryItem.objects.create(**validatedData)

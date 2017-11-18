@@ -20,8 +20,6 @@ from django.contrib import admin
 from login.views import *
 from pantry.views import *
 
-
-
 router = routers.DefaultRouter()
 #router.register(r'users', viewset=AccountViewSet)
 #router.register(r'groups', views.GroupViewSet)
@@ -29,6 +27,7 @@ router.register(prefix='foods', viewset=FoodItemViewSet)
 router.register(prefix='recipes', viewset=RecipeViewSet)
 router.register(prefix='cuisines', viewset=CuisineViewSet)
 router.register(prefix='courses', viewset=CourseViewSet)
+router.register(prefix='pantry', viewset=PantryItemViewSet, base_name='pantry')
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
