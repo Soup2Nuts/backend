@@ -26,7 +26,7 @@ router = routers.DefaultRouter()
 router.register(r'users', viewset=AccountViewSet)
 #router.register(r'groups', views.GroupViewSet)
 router.register(prefix='foods', viewset=FoodItemViewSet)
-router.register(prefix='recipe', viewset=RecipeViewSet)
+router.register(prefix='recipes', viewset=RecipeViewSet)
 router.register(prefix='cuisines', viewset=CuisineViewSet)
 router.register(prefix='courses', viewset=CourseViewSet)
 
