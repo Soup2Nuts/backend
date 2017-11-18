@@ -9,23 +9,25 @@ class AccountSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = Account
-        fields = ('url', 'username', 'firstName', 'lastName', 'date_joined', 'last_login', 'password', 'confirmPassword')
+        fields = ('url', 'username', 'firstName', 'lastName',
+        	'date_joined', 'last_login', 'password', 'confirmPassword')
         readOnlyFields = ('date_joined', 'last_login')
 
         def create(self, validatedData):
-            return User.objects.create(**validatedData)
+        	return User.objects.create(**validatedData)
 
         def update(self, instance, validatedData):
-            instance.username = validatedData.get('username', instance.username)
+        	instance.username = validatedData.get('username', instance.username)
 
-            instance.save()
+        	instance.save()
 
-            password = validatedData.get('password', None)
-            confirmPassword = validatedData.get('confirmPassword', None)
-            if password and confirmPassword and password == confirmPassword:
-                instance.setPassword(password)
-                instance.save()
+        	password = validatedData.get('password', None)
+        	confirmPassword = validatedData.get('confirmPassword', None)
 
-            update_session_auth_hash(self.context.get('request'), instance)
+        	if password and confirmPassword and password == confirmPassword:
+        		instance.setPassword(password)
+        		instance.save()
 
-            return instance
+        	update_session_auth_hash(self.context.get('request'), instance)
+
+        	return instance
