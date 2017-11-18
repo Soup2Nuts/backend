@@ -1,17 +1,13 @@
-from django.contrib.auth.models import AbstractBaseUser
-from django.contrib.auth.models import BaseUserManager
 from django.db import models
+from django.contrib.auth.models import (AbstractBaseUser, BaseUserManager)
 
 class AccountManager(BaseUserManager):
-	def createUser(self, username, password=None, **kwargs):
+	def create_user(self, username, password=None):
 		if not username:
 			raise ValueError('Users must have a valid username')
 
-		# if not kwargs.get('username'):
-			# raise ValueError('Users must have a valid username')
-
 		account = self.model(
-			username = self.username # , username = kwargs.get('username')
+			username = username
 		)
 
 		account.set_password(password)
@@ -19,8 +15,8 @@ class AccountManager(BaseUserManager):
 
 		return account
 
-	def createSuperUser(self, username, password, **kwargs):
-		account = self.createUser(username, password, **kwargs)
+	def create_superuser(self, username, password):
+		account = self.createUser(username, password)
 
 		account.isAdmin	= True;
 		account.save()
@@ -36,26 +32,17 @@ class Account(AbstractBaseUser):
 	isAdmin = models.BooleanField(default=False)
 
 	created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
 
-    objects = AccountManager()
+	updated_at = models.DateTimeField(auto_now=True)	
 
-    USERNAME_FIELD = 'username'
-    REQUIRED_FIELDS = ['username']
+	objects = AccountManager()
 
-    def __unicode__(self):
-    	return self.username
+	USERNAME_FIELD = 'username'
+	REQUIRED_FIELDS = ['username']
 
-    def getFullName(self):
-    	return ' '.join([self.firstName, self.lastName])
+	def __str__(self):
+		return self.username
 
-class Ingredient(models.Model):
-    name = models.CharField(max_length=50)
-
-    class Meta:
-        verbose_name = "Ingredient"
-        verbose_name_plural = "Ingredients"
-
-    def __unicode__(self):
-        return self.name
+	def get_full_name(self):
+		return ' '.join([self.firstName, self.lastName])
 

@@ -41,11 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'backend.apps.BackendConfig',
+    'login.apps.BackendConfig',
     'corsheaders',
     'rest_framework'
-    'pantry'
-    'login'
 ]
 
 MIDDLEWARE = [

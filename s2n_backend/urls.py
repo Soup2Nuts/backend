@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from rest_framework import routers # rest_framework_nested ?
 
-from login.views import views
+from login.views import AccountViewSet, LoginView, LogoutView
 
 router = routers.DefaultRouter()
 router.register(r'users', login.views.AccountViewSet)
@@ -30,5 +30,5 @@ router.register(r'ingredients', views.IngredientViewSet)
 urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    url(r'^admin/', admin.site.urls)
+    #url(r'^admin/', admin.site.urls)
 ]
