@@ -1,13 +1,5 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> branch-katie-test
 Django==1.11.7
 django-cors-headers==2.1.0
 djangorestframework==3.7.3
 mysqlclient==1.3.12
-<<<<<<< HEAD
 pytz==2017.3
-=======
-pytz==2017.3
->>>>>>> branch-katie-test
