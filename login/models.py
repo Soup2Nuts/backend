@@ -38,7 +38,7 @@ class Account(AbstractBaseUser):
 	objects = AccountManager()
 
 	USERNAME_FIELD = 'username'
-	REQUIRED_FIELDS = ['username']
+	# REQUIRED_FIELDS = ['username']
 
 	def __str__(self):
 		return self.username

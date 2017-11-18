@@ -1,9 +1,7 @@
-from django.contrib.auth.models import Account
-from django.contrib.auth import authenticate, login, logout
-from rest_framework import permissions, viewsets
-
+from django.contrib.auth import (authenticate, login, logout)
+from rest_framework import (permissions, viewsets, views)
 from login.serializers import AccountSerializer
-from login.models import Ingredient
+from login.models import (Account, AccountManager)
 
 class AccountViewSet(viewsets.ModelViewSet):
     """
