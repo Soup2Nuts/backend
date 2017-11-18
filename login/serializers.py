@@ -22,7 +22,6 @@ class AccountSerializer(serializers.HyperlinkedModelSerializer):
 
             password = validatedData.get('password', None)
             confirmPassword = validatedData.get('confirmPassword', None)
-
             if password and confirmPassword and password == confirmPassword:
                 instance.setPassword(password)
                 instance.save()
