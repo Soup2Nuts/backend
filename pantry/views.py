@@ -3,17 +3,15 @@ from rest_framework import viewsets, permissions, views
 from .models import *
 from .serializers import *
 from rest_framework.decorators import permission_classes
-from rest_framework.permissions import IsAuthenticated, IsAdminUser
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from .permissions import IsPantryItemOwner
 
-@permission_classes((permissions.IsAuthenticated, ))
 class FoodItemViewSet(viewsets.ModelViewSet):
     """ ViewSet for viewing and editing Food Item objects """
     queryset = FoodItem.objects.all()
     serializer_class = FoodItemSerializer
 
-@permission_classes((permissions.IsAuthenticated, ))
 class RecipeViewSet(viewsets.ModelViewSet):
     """ ViewSet for viewing and editing Recipe objects """
     queryset = Recipe.objects.all()
@@ -32,7 +30,7 @@ class CuisineViewSet(viewsets.ModelViewSet):
 class PantryItemViewSet(viewsets.ModelViewSet):
     """ ViewSet for viewing and editing PantryItem objects """
     serializer_class = PantryItemSerializer
-    permission_classes = (permissions.IsAuthenticated, IsPantryItemOwner)
+    # permission_classes = (permissions.IsAuthenticated, IsPantryItemOwner)
 
     def get_queryset(self):
         """

@@ -1,6 +1,5 @@
 from rest_framework import serializers
 from .models import *
-from login.serializers import AccountSerializer
 
 class FoodItemSerializer(serializers.ModelSerializer):
     """ Serializer to represent the FoodItem model """

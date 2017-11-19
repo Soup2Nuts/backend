@@ -1,6 +1,7 @@
 from django.db import models
-from login.models import Account
+from django.contrib.auth import get_user_model
 
+User = get_user_model()
 class FoodItem(models.Model):
     #primary key field is read-only, trying to change the primary_key field will create a new object
     name = models.CharField(max_length = 200, primary_key=True)
@@ -58,7 +59,7 @@ class Recipe(models.Model):
 
 class PantryItem(models.Model):
     item = models.ForeignKey(FoodItem, on_delete=models.CASCADE)
-    owner = models.ForeignKey(Account, related_name = 'pantry', on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, related_name = 'pantry', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.item.name

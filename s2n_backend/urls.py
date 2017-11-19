@@ -17,17 +17,15 @@ Including another URLconf
 from django.conf.urls import (url, include)
 from rest_framework import routers # rest_framework_nested ?
 from django.contrib import admin
-from login.views import *
+# from login.views import *
 from pantry.views import *
 
 router = routers.DefaultRouter()
-#router.register(r'users', viewset=AccountViewSet)
-#router.register(r'groups', views.GroupViewSet)
-router.register(prefix='foods', viewset=FoodItemViewSet)
-router.register(prefix='recipes', viewset=RecipeViewSet)
-router.register(prefix='cuisines', viewset=CuisineViewSet)
-router.register(prefix='courses', viewset=CourseViewSet)
-router.register(prefix='pantry', viewset=PantryItemViewSet, base_name='pantry')
+router.register(prefix='api/foods', viewset=FoodItemViewSet)
+router.register(prefix='api/recipes', viewset=RecipeViewSet)
+router.register(prefix='api/cuisines', viewset=CuisineViewSet)
+router.register(prefix='api/courses', viewset=CourseViewSet)
+router.register(prefix='api/pantry', viewset=PantryItemViewSet, base_name='pantry')
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
@@ -35,7 +33,6 @@ urlpatterns = [
     url(r'^', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^admin/', admin.site.urls),
-    url(r'^accounts/login/', LoginView.as_view()),
-    url(r'^login/$', LoginView.as_view()),
-    url(r'^logout/$', LogoutView.as_view()),
+    url(r'^auth/', include('djoser.urls')),
+    url(r'^auth/', include('djoser.urls.authtoken')),
 ]
