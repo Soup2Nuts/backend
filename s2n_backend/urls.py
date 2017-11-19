@@ -19,6 +19,7 @@ from rest_framework import routers # rest_framework_nested ?
 from django.contrib import admin
 # from login.views import *
 from pantry.views import *
+from rest_framework_jwt.views import verify_jwt_token
 
 router = routers.DefaultRouter()
 router.register(prefix='api/foods', viewset=FoodItemViewSet)
@@ -34,5 +35,6 @@ urlpatterns = [
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^admin/', admin.site.urls),
     url(r'^auth/', include('djoser.urls')),
-    url(r'^auth/', include('djoser.urls.authtoken')),
+    url(r'^auth/', include('djoser.urls.jwt')),
+    url(r'^api-token-verify/', verify_jwt_token),
 ]
