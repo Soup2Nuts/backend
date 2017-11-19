@@ -27,7 +27,7 @@ class Ingredient(models.Model):
     notes = models.CharField(max_length = 500, null=True, blank=True)
 
     def __str__(self):
-        s = ", " + self.notes if self.notes!=None else ''
+        s = ", " + self.notes if self.notes!=None or self.notes.length == 0 else ''
         return self.quantity + ' ' + self.name.name + s
 
 class Cuisine(models.Model):
