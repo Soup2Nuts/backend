@@ -5,7 +5,7 @@ from .serializers import *
 from rest_framework.decorators import permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
-from .permissions import IsPantryItemOwner
+
 
 class FoodItemViewSet(viewsets.ModelViewSet):
     """ ViewSet for viewing and editing Food Item objects """
@@ -30,8 +30,8 @@ class CuisineViewSet(viewsets.ModelViewSet):
 class PantryItemViewSet(viewsets.ModelViewSet):
     """ ViewSet for viewing and editing PantryItem objects """
     serializer_class = PantryItemSerializer
-    # permission_classes = (permissions.IsAuthenticated, IsPantryItemOwner)
 
+    # permission_classes = (permissions.IsAuthenticated, IsPantryItemOwner)
     def get_queryset(self):
         """
         This view should return a list of all the pantry items
@@ -39,5 +39,4 @@ class PantryItemViewSet(viewsets.ModelViewSet):
         """
         user = self.request.user
         queryset = PantryItem.objects.filter(owner=user)
-        #self.check_object_permissions(self.request, queryset)
         return queryset
