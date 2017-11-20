@@ -2,10 +2,9 @@ from django.shortcuts import get_object_or_404
 from rest_framework import viewsets, permissions, views
 from .models import *
 from .serializers import *
-from rest_framework.decorators import permission_classes
+from rest_framework.decorators import permission_classes, detail_route, list_route
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
-
 
 class FoodItemViewSet(viewsets.ModelViewSet):
     """ ViewSet for viewing and editing Food Item objects """
@@ -30,13 +29,13 @@ class CuisineViewSet(viewsets.ModelViewSet):
 class PantryItemViewSet(viewsets.ModelViewSet):
     """ ViewSet for viewing and editing PantryItem objects """
     serializer_class = PantryItemSerializer
-
+    queryset = PantryItem.objects.all() #!!!! change to check if admin first
     # permission_classes = (permissions.IsAuthenticated, IsPantryItemOwner)
-    def get_queryset(self):
+    def list(self, request):
         """
         This view should return a list of all the pantry items
         for the currently authenticated user.
         """
-        user = self.request.user
-        queryset = PantryItem.objects.filter(owner=user)
-        return queryset
+        queryset = PantryItem.objects.filter(owner=request.user)
+        serializer = self.serializer_class(queryset, many=True)
+        return Response(serializer.data)
