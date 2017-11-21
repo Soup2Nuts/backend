@@ -37,11 +37,9 @@ class PantryItemViewSet(viewsets.ViewSet):
         """
         token = request.META['HTTP_AUTHORIZATION']
         token = token.split(' ', 1)[1]
-        print(token)
         user_id = jwt_decode_handler(token)['user_id']
-        print(user_id)
-        user = User.objects.get(user_id)
+        user = User.objects.get(pk=user_id)
         items = user.pantry.all()
-        print(items)
+        # print(items)
         serializer = self.serializer_class(items, many=True)
         return Response(serializer.data)
