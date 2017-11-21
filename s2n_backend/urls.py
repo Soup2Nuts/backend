@@ -19,12 +19,16 @@ from rest_framework import routers
 from django.contrib import admin
 from pantry.views import *
 
+pantry_bindings = PantryItemViewSet.as_view({
+    'get': 'list',
+    'post': 'put',
+    'delete': 'delete',
+})
 router = routers.DefaultRouter()
 router.register(prefix='api/foods', viewset=FoodItemViewSet)
 router.register(prefix='api/recipes', viewset=RecipeViewSet)
 router.register(prefix='api/cuisines', viewset=CuisineViewSet)
 router.register(prefix='api/courses', viewset=CourseViewSet)
-router.register(prefix='api/pantry', viewset=PantryItemViewSet, base_name='list')
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
@@ -34,5 +38,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^auth/', include('djoser.urls')),
     url(r'^auth/', include('djoser.urls.jwt')),
-    # url(r'^jwt-auth/', obtain_jwt_token),
+    url(r'^api/pantry/', pantry_bindings, name='api-pantry'),
 ]

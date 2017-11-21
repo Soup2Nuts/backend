@@ -6,6 +6,7 @@ from rest_framework.decorators import permission_classes, detail_route, list_rou
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_jwt.utils import jwt_decode_handler
+from django.core.exceptions import PermissionDenied
 
 class FoodItemViewSet(viewsets.ModelViewSet):
     """ ViewSet for viewing and editing Food Item objects """
@@ -30,16 +31,52 @@ class CuisineViewSet(viewsets.ModelViewSet):
 class PantryItemViewSet(viewsets.ViewSet):
     """ ViewSet for viewing and editing PantryItem objects """
     serializer_class = PantryItemSerializer
+
+    #Decode the user from the request's header
+    def getUser(request):
+        try:
+            token = request.META['HTTP_AUTHORIZATION']
+            token = token.split(' ', 1)[1]
+            user_id = jwt_decode_handler(token)['user_id']
+            return User.objects.get(pk=user_id)
+        except:
+            raise PermissionDenied("Request has an invalid or expired token")
+
     def list(self, request):
         """
         This view should return a list of all the pantry items
         for the currently authenticated user.
         """
-        token = request.META['HTTP_AUTHORIZATION']
-        token = token.split(' ', 1)[1]
-        user_id = jwt_decode_handler(token)['user_id']
-        user = User.objects.get(pk=user_id)
+        user = PantryItemViewSet.getUser(request)
         items = user.pantry.all()
-        # print(items)
         serializer = self.serializer_class(items, many=True)
         return Response(serializer.data)
+
+    def put(self, request):
+        print(request.data)
+        food_name = request.data['food_name']
+        #Get the foodItem if it exists
+        food = get_object_or_404(FoodItem, pk=food_name)
+        user = PantryItemViewSet.getUser(request)
+        serializer = self.serializer_class(data={'item':food, 'owner':user.pk })
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        # print(serializer.errors)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, pk):
+        # food_name = request.data['food_name']
+        # food = get_object_or_404(FoodItem, pk=food_name)
+        user = PantryItemViewSet.getUser(request)
+        # items = PantryItem.objects.all().filter(item=food, owner=user.pk)
+        # print(items)
+        # if(len(items) <= 0):
+        #     return Response(status=status.HTTP_400_BAD_REQUEST)
+        # pk = items[0].pk
+        print(pk)
+        item = get_object_or_404(PantryItem, pk=pk)
+        if(not(item.owner == user)):
+            raise PermissionDenied("You cannot delete pantry item from another user's pantry.")
+        item.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
