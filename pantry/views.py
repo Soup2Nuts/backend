@@ -65,16 +65,16 @@ class PantryItemViewSet(viewsets.ViewSet):
         # print(serializer.errors)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    def delete(self, request, pk):
-        # food_name = request.data['food_name']
-        # food = get_object_or_404(FoodItem, pk=food_name)
+    def delete(self, request):
+        food_name = request.META['QUERY_STRING']
+        food_name = food_name.split('=', 1)[1]
+        food_name = food_name.replace("+", " ")
+        food = get_object_or_404(FoodItem, pk=food_name)
         user = PantryItemViewSet.getUser(request)
-        # items = PantryItem.objects.all().filter(item=food, owner=user.pk)
-        # print(items)
-        # if(len(items) <= 0):
-        #     return Response(status=status.HTTP_400_BAD_REQUEST)
-        # pk = items[0].pk
-        print(pk)
+        items = PantryItem.objects.all().filter(item=food, owner=user.pk)
+        if(len(items) <= 0):
+            return Response(status=status.HTTP_400_BAD_REQUEST)
+        pk = items[0].pk
         item = get_object_or_404(PantryItem, pk=pk)
         if(not(item.owner == user)):
             raise PermissionDenied("You cannot delete pantry item from another user's pantry.")
