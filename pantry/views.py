@@ -1,10 +1,11 @@
 from django.shortcuts import get_object_or_404
-from rest_framework import viewsets, permissions, views
+from rest_framework import viewsets, permissions, views, status
 from .models import *
 from .serializers import *
 from rest_framework.decorators import permission_classes, detail_route, list_route
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+from rest_framework_jwt.utils import jwt_decode_handler
 
 class FoodItemViewSet(viewsets.ModelViewSet):
     """ ViewSet for viewing and editing Food Item objects """
@@ -26,16 +27,21 @@ class CuisineViewSet(viewsets.ModelViewSet):
     queryset = Cuisine.objects.all()
     serializer_class = CuisineSerializer
 
-class PantryItemViewSet(viewsets.ModelViewSet):
+class PantryItemViewSet(viewsets.ViewSet):
     """ ViewSet for viewing and editing PantryItem objects """
     serializer_class = PantryItemSerializer
-    queryset = PantryItem.objects.all() #!!!! change to check if admin first
-    # permission_classes = (permissions.IsAuthenticated, IsPantryItemOwner)
     def list(self, request):
         """
         This view should return a list of all the pantry items
         for the currently authenticated user.
         """
-        queryset = PantryItem.objects.filter(owner=request.user)
-        serializer = self.serializer_class(queryset, many=True)
+        token = request.META['HTTP_AUTHORIZATION']
+        token = token.split(' ', 1)[1]
+        print(token)
+        user_id = jwt_decode_handler(token)['user_id']
+        print(user_id)
+        user = User.objects.get(user_id)
+        items = user.pantry.all()
+        print(items)
+        serializer = self.serializer_class(items, many=True)
         return Response(serializer.data)

@@ -58,5 +58,5 @@ class PantryItemSerializer(serializers.ModelSerializer):
         model = PantryItem
         fields = ("item", "owner")
 
-    def create(self, validatedData):
-    	return PantryItem.objects.create(**validatedData)
+    def create(self, validated_data):
+    	return PantryItem.objects.create(**validated_data)

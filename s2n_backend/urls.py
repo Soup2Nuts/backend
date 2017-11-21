@@ -15,18 +15,16 @@ Including another URLconf
 """
 
 from django.conf.urls import (url, include)
-from rest_framework import routers # rest_framework_nested ?
+from rest_framework import routers
 from django.contrib import admin
-# from login.views import *
 from pantry.views import *
-# from rest_framework_jwt.views import obtain_jwt_token
 
 router = routers.DefaultRouter()
 router.register(prefix='api/foods', viewset=FoodItemViewSet)
 router.register(prefix='api/recipes', viewset=RecipeViewSet)
 router.register(prefix='api/cuisines', viewset=CuisineViewSet)
 router.register(prefix='api/courses', viewset=CourseViewSet)
-router.register(prefix='api/pantry', viewset=PantryItemViewSet, base_name='pantry')
+router.register(prefix='api/pantry', viewset=PantryItemViewSet, base_name='list')
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
