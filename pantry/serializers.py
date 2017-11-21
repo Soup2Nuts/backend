@@ -60,3 +60,15 @@ class PantryItemSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
     	return PantryItem.objects.create(**validated_data)
+
+class FavoriteRecipeSerializer(serializers.ModelSerializer):
+    """ Serializer to represent the FavoriteRecipe model """
+    recipe = RecipeSerializer(required=True)
+    class Meta:
+        model = FavoriteRecipe
+        fields = ("recipe", "owner")
+
+    def create(self, validated_data):
+        recipe_data = validated_data.pop('recipe', None)
+        recipe = Recipe.objects.create_recipe(**recipe_data)
+        return FavoriteRecipe.objects.create(recipe=recipe, **validated_data)

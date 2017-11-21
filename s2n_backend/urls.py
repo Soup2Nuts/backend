@@ -24,6 +24,13 @@ pantry_bindings = PantryItemViewSet.as_view({
     'post': 'put',
     'delete': 'delete',
 })
+
+favorites_bindings = FavoriteRecipeViewSet.as_view({
+    'get': 'list',
+    'post': 'put',
+    'delete': 'delete',
+})
+
 router = routers.DefaultRouter()
 router.register(prefix='api/foods', viewset=FoodItemViewSet)
 router.register(prefix='api/recipes', viewset=RecipeViewSet)
@@ -39,4 +46,5 @@ urlpatterns = [
     url(r'^auth/', include('djoser.urls')),
     url(r'^auth/', include('djoser.urls.jwt')),
     url(r'^api/pantry/', pantry_bindings, name='api-pantry'),
+    url(r'^api/favorites/', favorites_bindings, name='api-favorites'),
 ]

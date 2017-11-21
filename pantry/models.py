@@ -52,10 +52,13 @@ class Recipe(models.Model):
     def __str__(self):
         s = 'Title: ' + self.title + '\n'
         s += 'Source: ' + self.source + '\n'
-        s += 'Cuisines: ' + str(self.cuisines) + '\n'
-        s += 'Courses: ' + str(self.courses) + '\n'
-        s += 'Ingredients: '  + str(self.ingredients)
+        s += 'Cuisines: ' + str(self.cuisines.all()) + '\n'
+        s += 'Courses: ' + str(self.courses.all()) + '\n'
+        s += 'Ingredients: '  + str(self.ingredients.all())
         return s
+
+    class Meta:
+        ordering = ('title',)
 
 class PantryItem(models.Model):
     item = models.ForeignKey(FoodItem, on_delete=models.CASCADE)
@@ -67,3 +70,14 @@ class PantryItem(models.Model):
     class Meta:
         ordering = ('item',)
         unique_together = ('item', 'owner',)
+
+class FavoriteRecipe(models.Model):
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, related_name = 'favorites', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return str(self.recipe)
+
+    class Meta:
+        ordering = ('recipe',)
+        unique_together = ('recipe', 'owner',)

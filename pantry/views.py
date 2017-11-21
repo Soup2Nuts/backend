@@ -53,7 +53,6 @@ class PantryItemViewSet(viewsets.ViewSet):
         return Response(serializer.data)
 
     def put(self, request):
-        print(request.data)
         food_name = request.data['food_name']
         #Get the foodItem if it exists
         food = get_object_or_404(FoodItem, pk=food_name)
@@ -79,4 +78,55 @@ class PantryItemViewSet(viewsets.ViewSet):
         if(not(item.owner == user)):
             raise PermissionDenied("You cannot delete pantry item from another user's pantry.")
         item.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+class FavoriteRecipeViewSet(viewsets.ViewSet):
+    """ ViewSet for viewing and editing FavoriteRecipe objects """
+    serializer_class = FavoriteRecipeSerializer
+
+    #Decode the user from the request's header
+    def getUser(request):
+        try:
+            token = request.META['HTTP_AUTHORIZATION']
+            token = token.split(' ', 1)[1]
+            user_id = jwt_decode_handler(token)['user_id']
+            return User.objects.get(pk=user_id)
+        except:
+            raise PermissionDenied("Request has an invalid or expired token")
+
+    def list(self, request):
+        """
+        This view should return a list of all the favorite recipes
+        for the currently authenticated user.
+        """
+        user = FavoriteRecipeViewSet.getUser(request)
+        items = user.favorites.all()
+        serializer = self.serializer_class(items, many=True)
+        return Response(serializer.data)
+
+    def put(self, request):
+        recipe_name = request.data['recipe_name']
+        #Get the Recipe if it exists
+        recipe = get_object_or_404(Recipe, pk=recipe_name)
+        user = FavoriteRecipeViewSet.getUser(request)
+        serializer = self.serializer_class(data={'recipe':recipe, 'owner':user.pk })
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request):
+        recipe_name = request.META['QUERY_STRING']
+        recipe_name = recipe_name.split('=', 1)[1]
+        recipe_name = recipe_name.replace("+", " ")
+        recipe = get_object_or_404(Recipe, pk=recipe_name)
+        user = recipe_nameViewSet.getUser(request)
+        recipes = recipe_name.objects.all().filter(recipe=recipe, owner=user.pk)
+        if(len(recipes) <= 0):
+            return Response(status=status.HTTP_400_BAD_REQUEST)
+        pk = recipes[0].pk
+        recipes = get_object_or_404(recipe_name, pk=pk)
+        if(not(recipe.owner == user)):
+            raise PermissionDenied("You cannot delete another user's favorites.")
+        recipe.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
