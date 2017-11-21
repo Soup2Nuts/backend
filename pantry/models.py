@@ -1,6 +1,7 @@
 from django.db import models
-from login.models import Account
+from django.contrib.auth import get_user_model
 
+User = get_user_model()
 class FoodItem(models.Model):
     #primary key field is read-only, trying to change the primary_key field will create a new object
     name = models.CharField(max_length = 200, primary_key=True)
@@ -51,14 +52,17 @@ class Recipe(models.Model):
     def __str__(self):
         s = 'Title: ' + self.title + '\n'
         s += 'Source: ' + self.source + '\n'
-        s += 'Cuisines: ' + str(self.cuisines) + '\n'
-        s += 'Courses: ' + str(self.courses) + '\n'
-        s += 'Ingredients: '  + str(self.ingredients)
+        s += 'Cuisines: ' + str(self.cuisines.all()) + '\n'
+        s += 'Courses: ' + str(self.courses.all()) + '\n'
+        s += 'Ingredients: '  + str(self.ingredients.all())
         return s
+
+    class Meta:
+        ordering = ('title',)
 
 class PantryItem(models.Model):
     item = models.ForeignKey(FoodItem, on_delete=models.CASCADE)
-    owner = models.ForeignKey(Account, related_name = 'pantry', on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, related_name = 'pantry', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.item.name
@@ -66,3 +70,14 @@ class PantryItem(models.Model):
     class Meta:
         ordering = ('item',)
         unique_together = ('item', 'owner',)
+
+class FavoriteRecipe(models.Model):
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
+    owner = models.ForeignKey(User, related_name = 'favorites', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return str(self.recipe)
+
+    class Meta:
+        ordering = ('recipe',)
+        unique_together = ('recipe', 'owner',)
