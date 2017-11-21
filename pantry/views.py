@@ -120,12 +120,12 @@ class FavoriteRecipeViewSet(viewsets.ViewSet):
         recipe_name = recipe_name.split('=', 1)[1]
         recipe_name = recipe_name.replace("+", " ")
         recipe = get_object_or_404(Recipe, pk=recipe_name)
-        user = recipe_nameViewSet.getUser(request)
-        recipes = recipe_name.objects.all().filter(recipe=recipe, owner=user.pk)
+        user = FavoriteRecipeViewSet.getUser(request)
+        recipes = FavoriteRecipe.objects.all().filter(recipe=recipe, owner=user.pk)
         if(len(recipes) <= 0):
             return Response(status=status.HTTP_400_BAD_REQUEST)
-        pk = recipes[0].pk
-        recipes = get_object_or_404(recipe_name, pk=pk)
+        recipe = recipes[0]
+        # recipe = get_object_or_404(Recipe, pk=pk)
         if(not(recipe.owner == user)):
             raise PermissionDenied("You cannot delete another user's favorites.")
         recipe.delete()
