@@ -31,7 +31,7 @@ def search_recipes(request, format=None):
         recipe_dict['substitutions'] =  get_real_substitutions(get_substitutions_made(user, recipe), recipe_dict['ingredients'])
         recipe_dict['numberOfSubstitutions'] = len(recipe_dict['substitutions'])
         value.append(recipe_dict)
-    return JsonResponse(value, safe=False)
+    return JsonResponse({'value':value})
 
 class FoodItemViewSet(viewsets.ModelViewSet):
     """ ViewSet for viewing and editing Food Item objects """
