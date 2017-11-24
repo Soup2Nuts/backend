@@ -21,13 +21,28 @@ class Command(BaseCommand):
                 self.stdout.write(str(e) + ' : failed to load "%s"' %text_file)
                 break
         for sub in substitutions:
-            print(sub)
-            original_food, created = FoodItem.objects.get_or_create(pk=sub[0])
-            sub_obj = Substitution(original_food=original_food)
-            sub_obj.save()
+            valid_sub = True
+            if(len(sub[0].strip())==0):
+                valid_sub = False
+                break
+            original_food, created = FoodItem.objects.get_or_create(pk=sub[0].strip())
+            sub_foods = []
+            sub_ratios = []
             for sf in sub[1]:
-                ratio = sf[0]
-                sub_food, created = FoodItem.objects.get_or_create(pk=sf[1])
-                sub_food_obj = SubstituteFood(substitute_food=sub_food, ratio=ratio, substitution=sub_obj)
-                sub_food_obj.save()
-            self.stdout.write(self.style.SUCCESS('Successfully loaded substitution: "%s"' %sub_obj))
+                if(len(sf[0].strip())<=0):
+                    valid_sub = False
+                    break
+                sub_ratios.append(sf[0].strip())
+                name = sf[1].strip()
+                if(len(name)<=0):
+                    valid_sub = False
+                    break
+                sub_food, created = FoodItem.objects.get_or_create(pk=name)
+                sub_foods.append(sub_food)
+            if(valid_sub):
+                sub_obj = Substitution(original_food=original_food)
+                sub_obj.save()
+                for i in range(0, len(sub_foods)):
+                                sub_food_obj = SubstituteFood(substitute_food=sub_foods[i], ratio=sub_ratios[i], substitution=sub_obj)
+                                sub_food_obj.save()
+                self.stdout.write(self.style.SUCCESS('Successfully loaded substitution: \n"%s"' %sub_obj))

@@ -101,3 +101,4 @@ class SubstituteFood(models.Model):
 
     class Meta:
         ordering = ('substitute_food',)
+        unique_together = ('substitute_food', 'substitution',)
