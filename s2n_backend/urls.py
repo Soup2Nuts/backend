@@ -36,6 +36,7 @@ router.register(prefix='api/foods', viewset=FoodItemViewSet)
 router.register(prefix='api/recipes', viewset=RecipeViewSet)
 router.register(prefix='api/cuisines', viewset=CuisineViewSet)
 router.register(prefix='api/courses', viewset=CourseViewSet)
+router.register(prefix='api/substitutions', viewset=SubstitutionViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.

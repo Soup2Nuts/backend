@@ -13,6 +13,18 @@ class CourseSerializer(serializers.ModelSerializer):
         model = Course
         fields = ("name", )
 
+class SubstitutionSerializer(serializers.ModelSerializer):
+    """ Serializer to represent the Substitution model """
+    class Meta:
+        model = Substitution
+        fields = ("original_food", "substitute_foods")
+
+class SubstituteFoodSerializer(serializers.ModelSerializer):
+    """ Serializer to represent the SubstituteFood model """
+    class Meta:
+        model = SubstituteFood
+        fields = ("ratio", "substitute_food", "substitution")
+
 class CuisineSerializer(serializers.ModelSerializer):
     """ Serializer to represent the Cuisine model """
     class Meta:

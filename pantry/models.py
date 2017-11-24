@@ -28,7 +28,7 @@ class Ingredient(models.Model):
     notes = models.CharField(max_length = 500, null=True, blank=True)
 
     def __str__(self):
-        s = ", " + self.notes if self.notes!=None or self.notes.length == 0 else ''
+        s = (", " + self.notes) if (self.notes!=None and len(self.notes) > 0) else ''
         return self.quantity + ' ' + self.name.name + s
 
 class Cuisine(models.Model):
@@ -81,3 +81,23 @@ class FavoriteRecipe(models.Model):
     class Meta:
         ordering = ('recipe',)
         unique_together = ('recipe', 'owner',)
+
+class Substitution(models.Model):
+    original_food = models.ForeignKey(FoodItem, related_name='substitutions', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return str(self.original_food) + ': ' + str(self.substitute_foods.all())
+
+    class Meta:
+        ordering = ('original_food',)
+
+class SubstituteFood(models.Model):
+    substitute_food = models.ForeignKey(FoodItem, on_delete=models.CASCADE)
+    ratio = models.CharField(max_length = 200)
+    substitution = models.ForeignKey(Substitution, related_name='substitute_foods', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.ratio + ' ' + str(self.substitute_food)
+
+    class Meta:
+        ordering = ('substitute_food',)

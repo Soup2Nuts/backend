@@ -28,26 +28,26 @@ class CuisineViewSet(viewsets.ModelViewSet):
     queryset = Cuisine.objects.all()
     serializer_class = CuisineSerializer
 
+class SubstitutionViewSet(viewsets.ModelViewSet):
+    """ ViewSet for viewing and editing Substitution objects """
+    queryset = Substitution.objects.all()
+    serializer_class = SubstitutionSerializer
+
+class SubstituteFoodViewSet(viewsets.ModelViewSet):
+    """ ViewSet for viewing and editing Substitution objects """
+    queryset = SubstituteFood.objects.all()
+    serializer_class = SubstituteFoodSerializer
+
 class PantryItemViewSet(viewsets.ViewSet):
     """ ViewSet for viewing and editing PantryItem objects """
     serializer_class = PantryItemSerializer
-
-    #Decode the user from the request's header
-    def getUser(request):
-        try:
-            token = request.META['HTTP_AUTHORIZATION']
-            token = token.split(' ', 1)[1]
-            user_id = jwt_decode_handler(token)['user_id']
-            return User.objects.get(pk=user_id)
-        except:
-            raise PermissionDenied("Request has an invalid or expired token")
 
     def list(self, request):
         """
         This view should return a list of all the pantry items
         for the currently authenticated user.
         """
-        user = PantryItemViewSet.getUser(request)
+        user = getUser(request)
         items = user.pantry.all()
         serializer = self.serializer_class(items, many=True)
         return Response(serializer.data)
@@ -84,22 +84,12 @@ class FavoriteRecipeViewSet(viewsets.ViewSet):
     """ ViewSet for viewing and editing FavoriteRecipe objects """
     serializer_class = FavoriteRecipeSerializer
 
-    #Decode the user from the request's header
-    def getUser(request):
-        try:
-            token = request.META['HTTP_AUTHORIZATION']
-            token = token.split(' ', 1)[1]
-            user_id = jwt_decode_handler(token)['user_id']
-            return User.objects.get(pk=user_id)
-        except:
-            raise PermissionDenied("Request has an invalid or expired token")
-
     def list(self, request):
         """
         This view should return a list of all the favorite recipes
         for the currently authenticated user.
         """
-        user = FavoriteRecipeViewSet.getUser(request)
+        user = getUser(request)
         items = user.favorites.all()
         serializer = self.serializer_class(items, many=True)
         return Response(serializer.data)
@@ -130,3 +120,13 @@ class FavoriteRecipeViewSet(viewsets.ViewSet):
             raise PermissionDenied("You cannot delete another user's favorites.")
         recipe.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+#Decode the user from the request's header
+def getUser(request):
+    try:
+        token = request.META['HTTP_AUTHORIZATION']
+        token = token.split(' ', 1)[1]
+        user_id = jwt_decode_handler(token)['user_id']
+        return User.objects.get(pk=user_id)
+    except:
+        raise PermissionDenied("Request has an invalid or expired token")
