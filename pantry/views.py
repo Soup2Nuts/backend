@@ -13,8 +13,8 @@ import json
 
 @api_view(['GET'])
 def search_recipes(request, format=None):
-    # user = get_user(request)
-    user = User.objects.all()[0]
+    user = get_user(request)
+    # user = User.objects.all()[0]
     try:
         cuisines = request.data['cuisines']
     except:
