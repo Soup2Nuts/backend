@@ -54,7 +54,9 @@ class Recipe(models.Model):
         s += 'Source: ' + self.source + '\n'
         s += 'Cuisines: ' + str(self.cuisines.all()) + '\n'
         s += 'Courses: ' + str(self.courses.all()) + '\n'
-        s += 'Ingredients: '  + str(self.ingredients.all())
+        s += 'Ingredients:\n'
+        for i in self.ingredients.all():
+            s += str(i) + '\n'
         return s
 
     class Meta:

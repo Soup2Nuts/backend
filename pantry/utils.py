@@ -57,3 +57,22 @@ def get_all_valid_recipes(user, cuisines=None, courses=None):
     if(courses==None):
         return Recipe.objects.filter(q, cuisines__name__in=cuisines)
     return Recipe.objects.filter(q, cuisines__name__in=cuisines, courses__name__in=courses)
+
+#Returns a queryset of all of the substitutions needed to be made for the specified recipe to be made from the FoodItem in the specified user's pantry
+def get_substitutions_made(user, recipe):
+    pantry = user.pantry.all()
+    item_in_recipe = Q(ingredient__in = recipe.ingredients.all())
+    item_in_pantry = Q(pantryitem__in = pantry)
+    missing_foods = FoodItem.objects.filter(item_in_recipe & ~item_in_pantry)
+    valid_subs = get_valid_substitutions(user)
+    distinct_subs = []
+    for missing_food in missing_foods:
+        temp = valid_subs.filter(original_food=missing_food)
+        if(len(temp)<=0):
+            print('"%s" can not make recipe "%s"'%user %recipe.title)
+            return None
+        distinct_subs.append(temp[0])
+    # print(recipe)
+    # print(distinct_subs)
+    # print(len(distinct_subs))
+    return distinct_subs
