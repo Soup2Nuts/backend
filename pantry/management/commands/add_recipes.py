@@ -1,4 +1,4 @@
-# Usage: python manage.py add_recipes pantry/data/recipes2.json
+# Usage: python manage.py add_recipes pantry/data/recipes.json
 from django.core.management.base import BaseCommand, CommandError
 from pantry.models import *
 import json

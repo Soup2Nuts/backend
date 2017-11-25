@@ -111,7 +111,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -119,7 +119,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "chopped"
             },
             {
@@ -151,7 +151,7 @@
                     "fraction": "3/4",
                     "unit": "C"
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "diced"
             },
             {
@@ -204,7 +204,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "grated or finely sliced"
             },
             {
@@ -228,7 +228,7 @@
                     "fraction": "1/3",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "finely chopped"
             },
             {
@@ -312,7 +312,7 @@
                     "fraction": "2",
                     "unit": "C"
                 },
-                "food": "mixed vegetables",
+                "food": "vegetables",
                 "notes": "chopped"
             },
             {
@@ -336,7 +336,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -382,7 +382,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": ""
             },
             {
@@ -470,7 +470,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -478,7 +478,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "bay leaf",
+                "food": "bay leaves",
                 "notes": ""
             },
             {
@@ -514,7 +514,7 @@
                     "fraction": "1/2",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -522,7 +522,7 @@
                     "fraction": "3",
                     "unit": ""
                 },
-                "food": "jalapeno chiles",
+                "food": "jalapeno pepper",
                 "notes": "finely chopped seeded if desired"
             },
             {
@@ -598,7 +598,7 @@
                     "fraction": "3/4",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "sliced"
             },
             {
@@ -667,7 +667,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "medium peeled and grated"
             },
             {
@@ -711,7 +711,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "sliced"
             },
             {
@@ -952,7 +952,7 @@
                     "fraction": "6",
                     "unit": ""
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "sliced"
             },
             {
@@ -960,7 +960,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "large quartered"
             },
             {
@@ -992,7 +992,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             }
         ]
@@ -1028,7 +1028,7 @@
                     "fraction": "3",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "minced"
             },
             {
@@ -1036,7 +1036,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "chopped or grated"
             },
             {
@@ -1052,7 +1052,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "beaten"
             },
             {
@@ -1060,7 +1060,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "egg whites",
+                "food": "eggs",
                 "notes": "beaten"
             },
             {
@@ -1113,7 +1113,7 @@
                     "fraction": "6",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -1137,7 +1137,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -1189,7 +1189,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "minced optional used in analysis"
             },
             {
@@ -1205,7 +1205,7 @@
                     "fraction": "3",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -1213,7 +1213,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "egg whites",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -1270,7 +1270,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "grapefruit",
+                "food": "grapes",
                 "notes": "peeled"
             },
             {
@@ -1394,7 +1394,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "lemon peel",
+                "food": "lemon zest",
                 "notes": "grated"
             },
             {
@@ -1402,7 +1402,7 @@
                     "fraction": "5",
                     "unit": "C"
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "unpeeled sliced"
             },
             {
@@ -1418,7 +1418,7 @@
                     "fraction": "2/3",
                     "unit": "C"
                 },
-                "food": "rolled oats",
+                "food": "oats",
                 "notes": ""
             },
             {
@@ -1470,7 +1470,7 @@
                     "fraction": "4",
                     "unit": "Tbsp"
                 },
-                "food": "chili powder",
+                "food": "chili",
                 "notes": ""
             },
             {
@@ -1502,7 +1502,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -1510,7 +1510,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -1578,7 +1578,7 @@
                     "fraction": "4",
                     "unit": "C"
                 },
-                "food": "mixed vegetables",
+                "food": "vegetables",
                 "notes": "sliced and steamed such as zucchini corn and tomatoes"
             }
         ]
@@ -1622,7 +1622,7 @@
                     "fraction": "1/4",
                     "unit": "Tbsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -1682,7 +1682,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "finely chopped"
             },
             {
@@ -1698,7 +1698,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": "or 1 garlic clove"
             },
             {
@@ -1722,7 +1722,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "bay leaf",
+                "food": "bay leaves",
                 "notes": ""
             },
             {
@@ -1775,7 +1775,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "red bell pepper",
+                "food": "bell pepper",
                 "notes": "medium chopped"
             },
             {
@@ -1783,7 +1783,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "diced"
             },
             {
@@ -1807,7 +1807,7 @@
                     "fraction": "3/2",
                     "unit": "Tbsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -1851,7 +1851,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "medium chopped"
             },
             {
@@ -1859,7 +1859,7 @@
                     "fraction": "1/2",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "medium chopped"
             },
             {
@@ -1899,7 +1899,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "red bell pepper",
+                "food": "bell pepper",
                 "notes": "optional* - used in analysis"
             }
         ]
@@ -1927,7 +1927,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "medium thinly sliced"
             },
             {
@@ -2056,7 +2056,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -2088,7 +2088,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "egg whites",
+                "food": "eggs",
                 "notes": "1/2 cup"
             },
             {
@@ -2132,7 +2132,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -2240,7 +2240,7 @@
                     "fraction": "3/2",
                     "unit": "Tbsp"
                 },
-                "food": "onion powder",
+                "food": "onions",
                 "notes": ""
             },
             {
@@ -2248,7 +2248,7 @@
                     "fraction": "3/2",
                     "unit": "Tbsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -2280,7 +2280,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "chicken breasts",
+                "food": "chicken",
                 "notes": "skinless"
             },
             {
@@ -2388,7 +2388,7 @@
                     "fraction": "3",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "large beaten"
             },
             {
@@ -2433,7 +2433,7 @@
                     "fraction": "16",
                     "unit": "oz"
                 },
-                "food": "chicken breasts",
+                "food": "chicken",
                 "notes": "ground"
             },
             {
@@ -2457,7 +2457,7 @@
                     "fraction": "1/2",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "small finely diced"
             },
             {
@@ -2481,7 +2481,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "small finely chopped"
             },
             {
@@ -2601,7 +2601,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "finely chopped"
             },
             {
@@ -2653,7 +2653,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -2669,7 +2669,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "peeled and sliced thin"
             },
             {
@@ -2677,7 +2677,7 @@
                     "fraction": "2",
                     "unit": "C"
                 },
-                "food": "mushroom",
+                "food": "mushrooms",
                 "notes": "sliced"
             },
             {
@@ -2693,7 +2693,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -2753,7 +2753,7 @@
                     "fraction": "4",
                     "unit": "C"
                 },
-                "food": "romaine lettuce",
+                "food": "lettuce",
                 "notes": "chopped"
             },
             {
@@ -2761,7 +2761,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "peeled and grated"
             },
             {
@@ -2769,7 +2769,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "chopped"
             },
             {
@@ -2801,7 +2801,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "Italian seasoning",
+                "food": "italian seasoning",
                 "notes": ""
             },
             {
@@ -2841,7 +2841,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "green onion",
+                "food": "green onions",
                 "notes": "chopped"
             }
         ]
@@ -2877,7 +2877,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -2885,7 +2885,7 @@
                     "fraction": "3/2",
                     "unit": ""
                 },
-                "food": "cloves of garlic",
+                "food": "garlic clove",
                 "notes": "thinly sliced or 1 tsp garlic powder"
             },
             {
@@ -2901,7 +2901,7 @@
                     "fraction": "3",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "thinly sliced"
             },
             {
@@ -2945,7 +2945,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "watermelon",
+                "food": "water",
                 "notes": "chunks"
             },
             {
@@ -3005,7 +3005,7 @@
                     "fraction": "5/2",
                     "unit": "C"
                 },
-                "food": "non-fat milk",
+                "food": "milk",
                 "notes": ""
             },
             {
@@ -3021,7 +3021,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "non-fat milk",
+                "food": "milk",
                 "notes": "cold"
             },
             {
@@ -3082,7 +3082,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "pears",
+                "food": "pear",
                 "notes": "canned  drained and sliced"
             },
             {
@@ -3210,7 +3210,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -3218,7 +3218,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "lemon rind",
+                "food": "lemon zest",
                 "notes": "grated"
             },
             {
@@ -3226,7 +3226,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "medium pared cored sliced"
             },
             {
@@ -3278,7 +3278,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "medium finely chopped"
             },
             {
@@ -3294,7 +3294,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "grated"
             },
             {
@@ -3310,7 +3310,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "hot pepper sauce",
+                "food": "pepper sauce",
                 "notes": ""
             },
             {
@@ -3394,7 +3394,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": ""
             },
             {
@@ -3494,7 +3494,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -3607,7 +3607,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "graham cracker",
+                "food": "graham crackers",
                 "notes": "large or use whole grain or saltine crackers"
             },
             {
@@ -3639,7 +3639,7 @@
                     "fraction": "1/2",
                     "unit": ""
                 },
-                "food": "grape",
+                "food": "grapes",
                 "notes": "cut in half"
             }
         ]
@@ -3744,7 +3744,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -3768,7 +3768,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -3865,7 +3865,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "medium 1 1/4 cups grated"
             },
             {
@@ -3905,7 +3905,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -3913,7 +3913,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "onion powder",
+                "food": "onions",
                 "notes": ""
             },
             {
@@ -4028,7 +4028,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "diced"
             },
             {
@@ -4052,7 +4052,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "onion powder",
+                "food": "onions",
                 "notes": ""
             },
             {
@@ -4060,7 +4060,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -4104,7 +4104,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "large"
             },
             {
@@ -4128,7 +4128,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -4213,7 +4213,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "mushroom",
+                "food": "mushrooms",
                 "notes": "sliced"
             }
         ]
@@ -4233,7 +4233,7 @@
                     "fraction": "6",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "large hard-boiled and peeled"
             },
             {
@@ -4257,7 +4257,7 @@
                     "fraction": "1/8",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             }
         ]
@@ -4317,7 +4317,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "large"
             },
             {
@@ -4333,7 +4333,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -4497,7 +4497,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "onion powder",
+                "food": "onions",
                 "notes": ""
             },
             {
@@ -4505,7 +4505,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -4589,7 +4589,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -4597,7 +4597,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "thinly sliced"
             },
             {
@@ -4613,7 +4613,7 @@
                     "fraction": "3/4",
                     "unit": "C"
                 },
-                "food": "non-fat milk",
+                "food": "milk",
                 "notes": ""
             },
             {
@@ -4698,7 +4698,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "diced"
             },
             {
@@ -4752,7 +4752,7 @@
                     "fraction": "3",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -4792,7 +4792,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "large large"
             },
             {
@@ -4845,7 +4845,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -4877,7 +4877,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "slightly beaten"
             },
             {
@@ -4968,7 +4968,7 @@
                     "fraction": "4",
                     "unit": "C"
                 },
-                "food": "romaine lettuce",
+                "food": "lettuce",
                 "notes": ""
             },
             {
@@ -4984,7 +4984,7 @@
                     "fraction": "2",
                     "unit": "C"
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": ""
             },
             {
@@ -5024,7 +5024,7 @@
                     "fraction": "2",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "chopped"
             },
             {
@@ -5060,7 +5060,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "grated"
             },
             {
@@ -5076,7 +5076,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "chopped cored and diced not peeled"
             },
             {
@@ -5084,7 +5084,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "green onion",
+                "food": "green onions",
                 "notes": "sliced"
             },
             {
@@ -5120,7 +5120,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "Granny Smith"
             },
             {
@@ -5144,7 +5144,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -5206,7 +5206,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "cored and diced"
             },
             {
@@ -5283,7 +5283,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -5307,7 +5307,7 @@
                     "fraction": "1/2",
                     "unit": ""
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "medium thinly sliced"
             },
             {
@@ -5315,7 +5315,7 @@
                     "fraction": "1/2",
                     "unit": ""
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "medium coarsely chopped"
             },
             {
@@ -5331,7 +5331,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "broccoli florets",
+                "food": "broccoli",
                 "notes": "coarsely chopped"
             },
             {
@@ -5347,7 +5347,7 @@
                     "fraction": "2",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "green or red coarsely chopped"
             }
         ]
@@ -5383,7 +5383,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "grated raw"
             },
             {
@@ -5391,7 +5391,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "egg whites",
+                "food": "eggs",
                 "notes": "well beaten"
             },
             {
@@ -5407,7 +5407,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -5549,7 +5549,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "egg whites",
+                "food": "eggs",
                 "notes": "beaten"
             },
             {
@@ -5596,7 +5596,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "cored and sliced with peel"
             },
             {
@@ -5656,7 +5656,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "pineapple chunks",
+                "food": "pineapple",
                 "notes": "fresh or canned"
             }
         ]
@@ -5744,7 +5744,7 @@
                     "fraction": "2",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -5784,7 +5784,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "onion powder",
+                "food": "onions",
                 "notes": ""
             },
             {
@@ -5812,7 +5812,7 @@
                     "fraction": "2",
                     "unit": "C"
                 },
-                "food": "romaine lettuce",
+                "food": "lettuce",
                 "notes": "washed"
             },
             {
@@ -5836,7 +5836,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "peeled"
             },
             {
@@ -5876,7 +5876,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "chili powder",
+                "food": "chili",
                 "notes": ""
             },
             {
@@ -5973,7 +5973,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "instant pudding mix",
+                "food": "instant pudding",
                 "notes": "banana or vanilla 3.5 ounce"
             },
             {
@@ -6061,7 +6061,7 @@
                     "fraction": "8",
                     "unit": ""
                 },
-                "food": "small potatoes",
+                "food": "potatoes",
                 "notes": "2 pounds sliced thin"
             },
             {
@@ -6077,7 +6077,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "sliced"
             },
             {
@@ -6093,7 +6093,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -6130,7 +6130,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -6146,7 +6146,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "red bell pepper",
+                "food": "bell pepper",
                 "notes": "chopped"
             },
             {
@@ -6154,7 +6154,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "low-fat cheese",
+                "food": "cheese",
                 "notes": "shredded"
             },
             {
@@ -6191,7 +6191,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "small chopped"
             },
             {
@@ -6199,7 +6199,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "chopped from a can"
             },
             {
@@ -6207,7 +6207,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "from a can"
             },
             {
@@ -6300,7 +6300,7 @@
                     "fraction": "3/2",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -6324,7 +6324,7 @@
                     "fraction": "3",
                     "unit": "Tbsp"
                 },
-                "food": "garlic",
+                "food": "garlic clove",
                 "notes": "chopped"
             },
             {
@@ -6417,7 +6417,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "Italian seasoning",
+                "food": "italian seasoning",
                 "notes": ""
             }
         ]
@@ -6453,7 +6453,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "chili powder",
+                "food": "chili",
                 "notes": ""
             },
             {
@@ -6461,7 +6461,7 @@
                     "fraction": "1/8",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": "dash"
             }
         ]
@@ -6506,7 +6506,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -6538,7 +6538,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "large egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -6554,7 +6554,7 @@
                     "fraction": "3/4",
                     "unit": "C"
                 },
-                "food": "non-fat milk",
+                "food": "milk",
                 "notes": ""
             },
             {
@@ -6622,7 +6622,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "garlic cloves",
+                "food": "garlic clove",
                 "notes": "crushed"
             },
             {
@@ -6654,7 +6654,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -6700,7 +6700,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "Italian seasoning",
+                "food": "italian seasoning",
                 "notes": ""
             },
             {
@@ -6708,7 +6708,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -6716,7 +6716,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "onion powder",
+                "food": "onions",
                 "notes": ""
             },
             {
@@ -6768,7 +6768,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "large"
             },
             {
@@ -6852,7 +6852,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -6888,7 +6888,7 @@
                     "fraction": "3/2",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -6957,7 +6957,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "Italian dressing",
+                "food": "italian dressing",
                 "notes": "light"
             },
             {
@@ -6997,7 +6997,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "green bell pepper",
+                "food": "bell pepper",
                 "notes": "chopped"
             },
             {
@@ -7005,7 +7005,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "red bell pepper",
+                "food": "bell pepper",
                 "notes": "chopped"
             },
             {
@@ -7013,7 +7013,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "green onion",
+                "food": "green onions",
                 "notes": "sliced"
             }
         ]
@@ -7123,7 +7123,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "small coarsely chopped"
             },
             {
@@ -7200,7 +7200,7 @@
                     "fraction": "2",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "finely chopped"
             },
             {
@@ -7248,7 +7248,7 @@
                     "fraction": "2",
                     "unit": "C"
                 },
-                "food": "turkey breast",
+                "food": "turkey",
                 "notes": "cut into julienne strips"
             },
             {
@@ -7301,7 +7301,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "cooked slices"
             },
             {
@@ -7317,7 +7317,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "green onion",
+                "food": "green onions",
                 "notes": "sliced"
             },
             {
@@ -7325,7 +7325,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "Italian salad dressing",
+                "food": "italian dressing",
                 "notes": "light or reduced fat can use 1/2 to 3/4 cup"
             }
         ]
@@ -7348,7 +7348,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -7356,7 +7356,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "non-fat milk",
+                "food": "milk",
                 "notes": ""
             },
             {
@@ -7388,7 +7388,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "lemon peel",
+                "food": "lemon zest",
                 "notes": "grated yellow only"
             },
             {
@@ -7412,7 +7412,7 @@
                     "fraction": "4",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -7517,7 +7517,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -7573,7 +7573,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             }
         ]
@@ -7730,7 +7730,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "green onion",
+                "food": "green onions",
                 "notes": "sliced"
             },
             {
@@ -7791,7 +7791,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "head of lettuce",
+                "food": "lettuce",
                 "notes": "chopped"
             }
         ]
@@ -7812,7 +7812,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "large baking"
             },
             {
@@ -7848,7 +7848,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -7856,7 +7856,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "non-fat milk",
+                "food": "milk",
                 "notes": ""
             },
             {
@@ -7880,7 +7880,7 @@
                     "fraction": "3",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -7933,7 +7933,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -7957,7 +7957,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -8033,7 +8033,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "minced"
             }
         ]
@@ -8077,7 +8077,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -8085,7 +8085,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -8214,7 +8214,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "rolled oats",
+                "food": "oats",
                 "notes": ""
             },
             {
@@ -8238,7 +8238,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "packet dry yeast",
+                "food": "dry yeast",
                 "notes": "active"
             },
             {
@@ -8410,7 +8410,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -8463,7 +8463,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "pineapple chunks",
+                "food": "pineapple",
                 "notes": "drained canned in juice or fresh orange segments"
             },
             {
@@ -8533,7 +8533,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "cut into 3-inch sticks"
             },
             {
@@ -8565,7 +8565,7 @@
                     "fraction": "6",
                     "unit": ""
                 },
-                "food": "green onion",
+                "food": "green onions",
                 "notes": "trimmed"
             },
             {
@@ -8597,7 +8597,7 @@
                     "fraction": "1/2",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -8605,7 +8605,7 @@
                     "fraction": "3",
                     "unit": ""
                 },
-                "food": "jalapeno chiles",
+                "food": "jalapeno pepper",
                 "notes": "finely chopped seeded if desired"
             },
             {
@@ -8641,7 +8641,7 @@
                     "fraction": "6",
                     "unit": ""
                 },
-                "food": "bananas",
+                "food": "banana",
                 "notes": "large"
             },
             {
@@ -8777,7 +8777,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "large shredded"
             },
             {
@@ -8854,7 +8854,7 @@
                     "fraction": "1/4",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": ""
             },
             {
@@ -8870,7 +8870,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "grape",
+                "food": "grapes",
                 "notes": ""
             },
             {
@@ -8878,7 +8878,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "small diced leave the peel on"
             },
             {
@@ -8938,7 +8938,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "pineapple chunks",
+                "food": "pineapple",
                 "notes": "8-ounce undrained"
             },
             {
@@ -9118,7 +9118,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "grated"
             },
             {
@@ -9154,7 +9154,7 @@
                     "fraction": "3",
                     "unit": "Tbsp"
                 },
-                "food": "red vinegar",
+                "food": "red wine vinegar",
                 "notes": ""
             },
             {
@@ -9186,7 +9186,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             }
         ]
@@ -9244,7 +9244,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -9292,7 +9292,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -9321,7 +9321,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": ""
             },
             {
@@ -9391,7 +9391,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "grape",
+                "food": "grapes",
                 "notes": ""
             },
             {
@@ -9399,7 +9399,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "bran cereal",
+                "food": "cereal",
                 "notes": "Grape Nuts or granola cereals are good"
             }
         ]
@@ -9435,7 +9435,7 @@
                     "fraction": "3/4",
                     "unit": "C"
                 },
-                "food": "quick rolled oats",
+                "food": "oats",
                 "notes": ""
             },
             {
@@ -9503,7 +9503,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "small"
             },
             {
@@ -9511,7 +9511,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -9519,7 +9519,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "chili powder",
+                "food": "chili",
                 "notes": ""
             },
             {
@@ -9555,7 +9555,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "hard boiled eggs",
+                "food": "eggs",
                 "notes": "finely chopped"
             },
             {
@@ -9632,7 +9632,7 @@
                     "fraction": "3",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "beaten"
             },
             {
@@ -9656,7 +9656,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -9664,7 +9664,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             }
         ]
@@ -9684,7 +9684,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "medium"
             },
             {
@@ -9777,7 +9777,7 @@
                     "fraction": "7/2",
                     "unit": "C"
                 },
-                "food": "rolled oats",
+                "food": "oats",
                 "notes": ""
             },
             {
@@ -9793,7 +9793,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "grated"
             },
             {
@@ -9802,59 +9802,6 @@
                     "unit": "C"
                 },
                 "food": "coconut",
-                "notes": ""
-            }
-        ]
-    },
-    {
-        "title": "Peachy Pops",
-        "source": "https://whatscooking.fns.usda.gov/recipes/supplemental-nutrition-assistance-program-snap/peachy-pops",
-        "cuisines": [
-            "American"
-        ],
-        "courses": [
-            "Dessert",
-            "Side Dish"
-        ],
-        "ingredients": [
-            {
-                "quantity": {
-                    "fraction": "2",
-                    "unit": ""
-                },
-                "food": "peaches",
-                "notes": ""
-            },
-            {
-                "quantity": {
-                    "fraction": "2/3",
-                    "unit": "C"
-                },
-                "food": "yogurt",
-                "notes": "low-fat vanilla"
-            },
-            {
-                "quantity": {
-                    "fraction": "2",
-                    "unit": "C"
-                },
-                "food": "orange juice",
-                "notes": ""
-            },
-            {
-                "quantity": {
-                    "fraction": "6",
-                    "unit": ""
-                },
-                "food": "paper cups",
-                "notes": ""
-            },
-            {
-                "quantity": {
-                    "fraction": "6",
-                    "unit": ""
-                },
-                "food": "spoons",
                 "notes": ""
             }
         ]
@@ -9875,7 +9822,7 @@
                     "fraction": "3",
                     "unit": ""
                 },
-                "food": "bananas",
+                "food": "banana",
                 "notes": "ripe"
             },
             {
@@ -9891,7 +9838,7 @@
                     "fraction": "2",
                     "unit": "C"
                 },
-                "food": "quick-cooking oats",
+                "food": "oats",
                 "notes": "uncooked"
             },
             {
@@ -9935,7 +9882,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -9943,7 +9890,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": ""
             },
             {
@@ -9959,7 +9906,7 @@
                     "fraction": "1/8",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -9975,7 +9922,7 @@
                     "fraction": "1/8",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -9983,7 +9930,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "chicken breasts",
+                "food": "chicken",
                 "notes": "skin removed thighs breasts or legs"
             }
         ]
@@ -10003,7 +9950,7 @@
                     "fraction": "11/2",
                     "unit": "C"
                 },
-                "food": "eggplant",
+                "food": "eggs",
                 "notes": "cubes 1 medium eggplant"
             },
             {
@@ -10027,7 +9974,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": ""
             },
             {
@@ -10043,7 +9990,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -10096,7 +10043,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "medium grated"
             },
             {
@@ -10112,7 +10059,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "chopped"
             },
             {
@@ -10172,7 +10119,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "diced"
             },
             {
@@ -10216,7 +10163,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -10272,7 +10219,7 @@
                     "fraction": "1/8",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             }
         ]
@@ -10316,7 +10263,7 @@
                     "fraction": "3",
                     "unit": "C"
                 },
-                "food": "boiling water",
+                "food": "water",
                 "notes": ""
             }
         ]
@@ -10353,7 +10300,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -10393,7 +10340,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -10438,7 +10385,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -10454,7 +10401,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "vanilla",
+                "food": "vanilla extract",
                 "notes": ""
             },
             {
@@ -10470,7 +10417,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -10508,7 +10455,7 @@
                     "fraction": "7",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "cut in quarters"
             },
             {
@@ -10621,7 +10568,7 @@
                     "fraction": "3",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -10637,7 +10584,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "dash salt",
+                "food": "salt",
                 "notes": ""
             },
             {
@@ -10773,7 +10720,7 @@
                     "fraction": "3",
                     "unit": "Tbsp"
                 },
-                "food": "cocoa powder",
+                "food": "cocoa",
                 "notes": "unsweetened"
             },
             {
@@ -10813,7 +10760,7 @@
                     "fraction": "4",
                     "unit": "C"
                 },
-                "food": "rolled oats",
+                "food": "oats",
                 "notes": ""
             },
             {
@@ -10837,7 +10784,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "vanilla",
+                "food": "vanilla extract",
                 "notes": ""
             }
         ]
@@ -10873,7 +10820,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -10881,7 +10828,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "grated"
             },
             {
@@ -10897,7 +10844,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -10905,7 +10852,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -10958,7 +10905,7 @@
                     "fraction": "3",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -10990,7 +10937,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "vanilla",
+                "food": "vanilla extract",
                 "notes": ""
             },
             {
@@ -11038,7 +10985,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -11066,7 +11013,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": "or 1 fresh clove minced"
             },
             {
@@ -11074,7 +11021,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "Italian herb seasoning",
+                "food": "italian seasoning",
                 "notes": ""
             },
             {
@@ -11194,7 +11141,7 @@
                     "fraction": "1/3",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "grated 1 teaspoon"
             },
             {
@@ -11246,7 +11193,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped raw"
             },
             {
@@ -11278,7 +11225,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "dash black pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -11314,7 +11261,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -11346,7 +11293,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "dash black pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -11390,7 +11337,7 @@
                     "fraction": "1/2",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -11398,7 +11345,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "diced"
             },
             {
@@ -11406,7 +11353,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "ears of corn",
+                "food": "corn",
                 "notes": "or cut from cob"
             },
             {
@@ -11443,7 +11390,7 @@
                     "fraction": "2",
                     "unit": "C"
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "diced"
             },
             {
@@ -11519,7 +11466,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "medium shredded"
             },
             {
@@ -11527,7 +11474,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "green onion",
+                "food": "green onions",
                 "notes": "sliced"
             },
             {
@@ -11571,7 +11518,7 @@
                     "fraction": "2",
                     "unit": "C"
                 },
-                "food": "whole kernel corn",
+                "food": "corn",
                 "notes": "fresh or frozen - cooked and drained"
             },
             {
@@ -11579,7 +11526,7 @@
                     "fraction": "3/4",
                     "unit": "C"
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "chopped"
             },
             {
@@ -11603,7 +11550,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -11639,7 +11586,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "small chopped"
             },
             {
@@ -11723,7 +11670,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "4 Tablespoons shredded"
             },
             {
@@ -11767,7 +11714,7 @@
                     "fraction": "3/4",
                     "unit": "tsp"
                 },
-                "food": "chili powder",
+                "food": "chili",
                 "notes": ""
             },
             {
@@ -11783,7 +11730,7 @@
                     "fraction": "2/3",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "2 teaspoon finely chopped"
             },
             {
@@ -11900,7 +11847,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "curry powder",
+                "food": "curry",
                 "notes": ""
             }
         ]
@@ -11920,7 +11867,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "eggplant",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -11936,7 +11883,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "small"
             },
             {
@@ -11944,7 +11891,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -12012,7 +11959,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped or chives"
             },
             {
@@ -12092,7 +12039,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped very fine"
             },
             {
@@ -12108,7 +12055,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -12168,7 +12115,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -12176,7 +12123,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -12212,7 +12159,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "large"
             },
             {
@@ -12236,7 +12183,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -12260,7 +12207,7 @@
                     "fraction": "3",
                     "unit": "Tbsp"
                 },
-                "food": "red vinegar",
+                "food": "red wine vinegar",
                 "notes": ""
             },
             {
@@ -12296,7 +12243,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -12336,7 +12283,7 @@
                     "fraction": "1/8",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -12344,7 +12291,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "non-fat dry milk",
+                "food": "dry milk",
                 "notes": ""
             },
             {
@@ -12388,7 +12335,7 @@
                     "fraction": "3/2",
                     "unit": "lb"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": ""
             },
             {
@@ -12404,7 +12351,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -12493,7 +12440,7 @@
                     "fraction": "2",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -12529,7 +12476,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": ""
             },
             {
@@ -12569,7 +12516,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "hot water",
+                "food": "water",
                 "notes": ""
             },
             {
@@ -12613,7 +12560,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "Italian seasoning",
+                "food": "italian seasoning",
                 "notes": ""
             },
             {
@@ -12629,7 +12576,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -12701,7 +12648,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "medium"
             },
             {
@@ -12777,7 +12724,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "medium"
             },
             {
@@ -12785,7 +12732,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -12869,7 +12816,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             }
         ]
@@ -12889,7 +12836,7 @@
                     "fraction": "1/2",
                     "unit": ""
                 },
-                "food": "head of cabbage",
+                "food": "cabbage",
                 "notes": "about 4 cups when chopped"
             },
             {
@@ -12985,7 +12932,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "small"
             },
             {
@@ -13033,7 +12980,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -13085,7 +13032,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "medium"
             },
             {
@@ -13093,7 +13040,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "medium"
             },
             {
@@ -13101,7 +13048,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "mushroom",
+                "food": "mushrooms",
                 "notes": "canned"
             },
             {
@@ -13285,7 +13232,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -13321,7 +13268,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "beaten"
             },
             {
@@ -13329,7 +13276,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -13337,7 +13284,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "onion powder",
+                "food": "onions",
                 "notes": ""
             },
             {
@@ -13345,7 +13292,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "Italian seasoning",
+                "food": "italian seasoning",
                 "notes": ""
             },
             {
@@ -13397,7 +13344,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -13441,7 +13388,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -13481,7 +13428,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -13509,7 +13456,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "root vegetables",
+                "food": "vegetables",
                 "notes": "choose a variety from potatoes rutabagas turnips parsnips beets sweet potatoes etc."
             },
             {
@@ -13517,7 +13464,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "chopped"
             },
             {
@@ -13525,7 +13472,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "medium chopped"
             },
             {
@@ -13589,7 +13536,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "egg whites",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -13730,7 +13677,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "peeled and grated"
             },
             {
@@ -13754,7 +13701,7 @@
                     "fraction": "1/2",
                     "unit": ""
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "diced"
             },
             {
@@ -13762,7 +13709,7 @@
                     "fraction": "1/8",
                     "unit": "C"
                 },
-                "food": "green bell pepper",
+                "food": "bell pepper",
                 "notes": "seeded and diced"
             },
             {
@@ -13806,7 +13753,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "medium chopped"
             },
             {
@@ -13834,7 +13781,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "eggplant",
+                "food": "eggs",
                 "notes": "peeled and cubed"
             },
             {
@@ -13850,7 +13797,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "green bell pepper",
+                "food": "bell pepper",
                 "notes": "cut into strips"
             },
             {
@@ -13858,7 +13805,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "sliced"
             },
             {
@@ -13866,7 +13813,7 @@
                     "fraction": "3",
                     "unit": "Tbsp"
                 },
-                "food": "Italian salad dressing",
+                "food": "italian dressing",
                 "notes": "low fat"
             },
             {
@@ -13910,7 +13857,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -14175,7 +14122,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "garlic",
+                "food": "garlic clove",
                 "notes": "fresh minced"
             },
             {
@@ -14207,7 +14154,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "onion powder",
+                "food": "onions",
                 "notes": ""
             },
             {
@@ -14215,7 +14162,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "corn flakes",
+                "food": "cornflakes",
                 "notes": "crumbled or regular bread crumbs"
             },
             {
@@ -14260,7 +14207,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "cored and diced"
             },
             {
@@ -14392,7 +14339,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "pureed or finely chopped"
             },
             {
@@ -14436,7 +14383,7 @@
                     "fraction": "5",
                     "unit": "Tbsp"
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": ""
             },
             {
@@ -14500,7 +14447,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "onion powder",
+                "food": "onions",
                 "notes": ""
             },
             {
@@ -14508,7 +14455,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "garlic cloves",
+                "food": "garlic clove",
                 "notes": "minced"
             },
             {
@@ -14552,7 +14499,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "instant vanilla pudding and pie-filling mix",
+                "food": "instant pudding",
                 "notes": "small packages 4 serving size fat-free sugar free"
             },
             {
@@ -14568,7 +14515,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "bananas",
+                "food": "banana",
                 "notes": "medium sliced"
             },
             {
@@ -14576,7 +14523,7 @@
                     "fraction": "2",
                     "unit": "C"
                 },
-                "food": "frozen whipped topping",
+                "food": "whipped topping",
                 "notes": "light"
             }
         ]
@@ -14599,7 +14546,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "plain yogurt",
+                "food": "yogurt",
                 "notes": "non-fat"
             },
             {
@@ -14639,7 +14586,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "ice cubes",
+                "food": "ice",
                 "notes": ""
             }
         ]
@@ -14677,7 +14624,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -14709,7 +14656,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -14817,7 +14764,7 @@
                     "fraction": "1/8",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -14825,7 +14772,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "large sliced"
             },
             {
@@ -14833,7 +14780,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "large sliced"
             },
             {
@@ -14877,7 +14824,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "large"
             },
             {
@@ -14885,7 +14832,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "dehydrated or one small onion minced"
             },
             {
@@ -14973,7 +14920,7 @@
                     "fraction": "5",
                     "unit": "C"
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "tart cored peeled and chopped"
             },
             {
@@ -15013,7 +14960,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "vanilla",
+                "food": "vanilla extract",
                 "notes": ""
             },
             {
@@ -15021,7 +14968,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "beaten"
             },
             {
@@ -15089,7 +15036,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "peppercorn",
+                "food": "black pepper",
                 "notes": "freshly ground"
             },
             {
@@ -15113,7 +15060,7 @@
                     "fraction": "2",
                     "unit": "Tbsp"
                 },
-                "food": "green onion",
+                "food": "green onions",
                 "notes": "minced"
             },
             {
@@ -15174,7 +15121,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "diced"
             },
             {
@@ -15222,7 +15169,7 @@
                     "fraction": "3",
                     "unit": "C"
                 },
-                "food": "corn kernels",
+                "food": "corn",
                 "notes": "frozen"
             },
             {
@@ -15258,7 +15205,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "dash salt",
+                "food": "salt",
                 "notes": ""
             },
             {
@@ -15282,7 +15229,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "bananas",
+                "food": "banana",
                 "notes": "very ripe mashed"
             },
             {
@@ -15403,7 +15350,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "large finely chopped"
             },
             {
@@ -15456,7 +15403,7 @@
                     "fraction": "8",
                     "unit": ""
                 },
-                "food": "chicken pieces",
+                "food": "chicken",
                 "notes": "breasts or legs"
             },
             {
@@ -15480,7 +15427,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "medium chopped"
             },
             {
@@ -15496,7 +15443,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -15536,7 +15483,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "medium chopped"
             },
             {
@@ -15580,7 +15527,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "chili powder",
+                "food": "chili",
                 "notes": ""
             },
             {
@@ -15588,7 +15535,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -15596,7 +15543,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": "black"
             },
             {
@@ -15642,7 +15589,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "shredded"
             },
             {
@@ -15650,7 +15597,7 @@
                     "fraction": "2/3",
                     "unit": "Tbsp"
                 },
-                "food": "green onion",
+                "food": "green onions",
                 "notes": "minced"
             },
             {
@@ -15674,7 +15621,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "curry powder",
+                "food": "curry",
                 "notes": ""
             },
             {
@@ -15682,7 +15629,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "dash pepper",
+                "food": "black pepper",
                 "notes": ""
             }
         ]
@@ -15718,7 +15665,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -15726,7 +15673,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "onion powder",
+                "food": "onions",
                 "notes": ""
             },
             {
@@ -15811,7 +15758,7 @@
                     "fraction": "3",
                     "unit": ""
                 },
-                "food": "corn cobs",
+                "food": "corn",
                 "notes": "cut into 2-inch sections"
             },
             {
@@ -15819,7 +15766,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "eggplant",
+                "food": "eggs",
                 "notes": "cut into 1/2-inch slices"
             },
             {
@@ -15827,7 +15774,7 @@
                     "fraction": "12",
                     "unit": ""
                 },
-                "food": "green onion",
+                "food": "green onions",
                 "notes": "trimmed"
             }
         ]
@@ -15871,7 +15818,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "onion powder",
+                "food": "onions",
                 "notes": ""
             },
             {
@@ -15879,7 +15826,7 @@
                     "fraction": "5/4",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -15976,7 +15923,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "vanilla",
+                "food": "vanilla extract",
                 "notes": ""
             },
             {
@@ -16000,7 +15947,7 @@
                     "fraction": "8",
                     "unit": ""
                 },
-                "food": "banana slices",
+                "food": "banana",
                 "notes": "1/4 inch"
             }
         ]
@@ -16036,7 +15983,7 @@
                     "fraction": "3/2",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -16068,7 +16015,7 @@
                     "fraction": "3",
                     "unit": "Tbsp"
                 },
-                "food": "garlic",
+                "food": "garlic clove",
                 "notes": "chopped"
             },
             {
@@ -16100,7 +16047,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": "black"
             }
         ]
@@ -16223,7 +16170,7 @@
                     "fraction": "3/4",
                     "unit": "C"
                 },
-                "food": "wheat and barley nugget cereal",
+                "food": "cereal",
                 "notes": ""
             },
             {
@@ -16231,7 +16178,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "bran cereal",
+                "food": "cereal",
                 "notes": "100%"
             },
             {
@@ -16315,7 +16262,7 @@
                     "fraction": "3/2",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "finely chopped"
             },
             {
@@ -16355,7 +16302,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "white rice",
+                "food": "rice",
                 "notes": "long-grain uncooked"
             },
             {
@@ -16384,7 +16331,7 @@
                     "fraction": "5",
                     "unit": "C"
                 },
-                "food": "spinach leaves",
+                "food": "spinach",
                 "notes": "packed washed and dried well"
             },
             {
@@ -16460,7 +16407,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "medium"
             },
             {
@@ -16500,7 +16447,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             }
         ]
@@ -16528,7 +16475,7 @@
                     "fraction": "8",
                     "unit": ""
                 },
-                "food": "garlic cloves",
+                "food": "garlic clove",
                 "notes": "unpeeled"
             },
             {
@@ -16560,7 +16507,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "chicken breast",
+                "food": "chicken",
                 "notes": "4 ounce with skin"
             },
             {
@@ -16688,7 +16635,7 @@
                     "fraction": "1/2",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "peeled and sliced"
             },
             {
@@ -16704,7 +16651,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "Italian salad dressing",
+                "food": "italian dressing",
                 "notes": "reduced calorie fat free"
             }
         ]
@@ -16772,7 +16719,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "hot pepper sauce",
+                "food": "pepper sauce",
                 "notes": ""
             },
             {
@@ -16808,7 +16755,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "cut into thick strips"
             },
             {
@@ -16824,7 +16771,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "large sliced"
             },
             {
@@ -16832,7 +16779,7 @@
                     "fraction": "1",
                     "unit": "lb"
                 },
-                "food": "mushroom",
+                "food": "mushrooms",
                 "notes": "fresh sliced"
             },
             {
@@ -16876,7 +16823,7 @@
                     "fraction": "6",
                     "unit": ""
                 },
-                "food": "romaine lettuce",
+                "food": "lettuce",
                 "notes": "torn into 1 1/2 inch pieces"
             },
             {
@@ -16892,7 +16839,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "medium chopped"
             },
             {
@@ -17001,7 +16948,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "finely chopped"
             },
             {
@@ -17009,7 +16956,7 @@
                     "fraction": "1/2",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "peeled and finely chopped"
             },
             {
@@ -17017,7 +16964,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "large"
             },
             {
@@ -17114,7 +17061,7 @@
                     "fraction": "1/2",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "cored and thinly sliced"
             },
             {
@@ -17158,7 +17105,7 @@
                     "fraction": "1",
                     "unit": "lb"
                 },
-                "food": "egg noodles",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -17198,7 +17145,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "shiitake mushrooms",
+                "food": "mushrooms",
                 "notes": "dried soaked stems removed and julienned"
             },
             {
@@ -17266,7 +17213,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -17306,7 +17253,7 @@
                     "fraction": "4",
                     "unit": "C"
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "diced chunks"
             },
             {
@@ -17322,7 +17269,7 @@
                     "fraction": "2",
                     "unit": "C"
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "sliced to place on cake"
             }
         ]
@@ -17367,7 +17314,7 @@
                     "fraction": "3",
                     "unit": ""
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "medium chopped"
             },
             {
@@ -17527,7 +17474,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "vanilla",
+                "food": "vanilla extract",
                 "notes": ""
             },
             {
@@ -17535,7 +17482,7 @@
                     "fraction": "5",
                     "unit": ""
                 },
-                "food": "egg whites",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -17563,7 +17510,7 @@
                     "fraction": "2",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "dried"
             },
             {
@@ -17571,7 +17518,7 @@
                     "fraction": "2",
                     "unit": "Tbsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -17639,7 +17586,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "Italian seasoning",
+                "food": "italian seasoning",
                 "notes": "dried"
             },
             {
@@ -17647,7 +17594,7 @@
                     "fraction": "1/2",
                     "unit": ""
                 },
-                "food": "cloves of garlic",
+                "food": "garlic clove",
                 "notes": "fresh minced"
             }
         ]
@@ -17700,7 +17647,7 @@
                     "fraction": "3/2",
                     "unit": "tsp"
                 },
-                "food": "vanilla",
+                "food": "vanilla extract",
                 "notes": ""
             },
             {
@@ -17768,7 +17715,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "lemon peel",
+                "food": "lemon zest",
                 "notes": "grated"
             },
             {
@@ -17821,7 +17768,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -17829,7 +17776,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "Italian seasoning",
+                "food": "italian seasoning",
                 "notes": "or as needed to sprinkle on"
             }
         ]
@@ -17973,7 +17920,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "non-fat dry milk",
+                "food": "dry milk",
                 "notes": "instant"
             },
             {
@@ -17997,7 +17944,7 @@
                     "fraction": "5/2",
                     "unit": "C"
                 },
-                "food": "bran cereal",
+                "food": "cereal",
                 "notes": ""
             }
         ]
@@ -18053,7 +18000,7 @@
                     "fraction": "3",
                     "unit": "C"
                 },
-                "food": "broccoli florets",
+                "food": "broccoli",
                 "notes": ""
             },
             {
@@ -18061,7 +18008,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "grated"
             },
             {
@@ -18077,7 +18024,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "chopped"
             },
             {
@@ -18085,7 +18032,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "green onion",
+                "food": "green onions",
                 "notes": "chopped"
             },
             {
@@ -18131,7 +18078,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "non-fat dry milk",
+                "food": "dry milk",
                 "notes": ""
             },
             {
@@ -18147,7 +18094,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "vanilla",
+                "food": "vanilla extract",
                 "notes": ""
             },
             {
@@ -18155,7 +18102,7 @@
                     "fraction": "10",
                     "unit": ""
                 },
-                "food": "ice cubes",
+                "food": "ice",
                 "notes": ""
             }
         ]
@@ -18228,7 +18175,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "ground ginger",
+                "food": "ginger",
                 "notes": ""
             },
             {
@@ -18236,7 +18183,7 @@
                     "fraction": "1/8",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -18260,7 +18207,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "sliced"
             },
             {
@@ -18284,7 +18231,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -18308,7 +18255,7 @@
                     "fraction": "8",
                     "unit": "oz"
                 },
-                "food": "sliced beef",
+                "food": "beef",
                 "notes": ""
             }
         ]
@@ -18353,7 +18300,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": ""
             },
             {
@@ -18361,7 +18308,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "lightly beaten"
             },
             {
@@ -18405,7 +18352,7 @@
                     "fraction": "6",
                     "unit": "Tbsp"
                 },
-                "food": "creamy peanut butter",
+                "food": "peanut butter",
                 "notes": ""
             },
             {
@@ -18526,7 +18473,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "yeast",
+                "food": "dry yeast",
                 "notes": "rapid rise"
             },
             {
@@ -18579,7 +18526,7 @@
                     "fraction": "6",
                     "unit": "C"
                 },
-                "food": "romaine lettuce",
+                "food": "lettuce",
                 "notes": "well washed and torn or spinach"
             },
             {
@@ -18603,7 +18550,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "cubed cooked skinless chicken",
+                "food": "chicken",
                 "notes": "1/2 pound skinless boneless chicken"
             },
             {
@@ -18611,7 +18558,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "Italian dressing",
+                "food": "italian dressing",
                 "notes": "lowfat"
             },
             {
@@ -18619,7 +18566,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "hard cooked optional"
             },
             {
@@ -18655,7 +18602,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -18807,7 +18754,7 @@
                     "fraction": "3/2",
                     "unit": "Tbsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -18839,7 +18786,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "dry mixed with 1/4 cup water"
             },
             {
@@ -18885,7 +18832,7 @@
                     "fraction": "2",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "finely chopped"
             },
             {
@@ -18929,7 +18876,7 @@
                     "fraction": "3/4",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -19029,7 +18976,7 @@
                     "fraction": "2/3",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "thinly sliced"
             },
             {
@@ -19045,7 +18992,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "garlic",
+                "food": "garlic clove",
                 "notes": "cloves whole"
             },
             {
@@ -19093,84 +19040,8 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
-            }
-        ]
-    },
-    {
-        "title": "Baked Beans",
-        "source": "https://whatscooking.fns.usda.gov/recipes/supplemental-nutrition-assistance-program-snap/baked-beans",
-        "cuisines": [
-            "Southern"
-        ],
-        "courses": [
-            "Main Dish"
-        ],
-        "ingredients": [
-            {
-                "quantity": {
-                    "fraction": "3/2",
-                    "unit": "C"
-                },
-                "food": "navy",
-                "notes": "kidney or lima beans dry sorted and rinsed"
-            },
-            {
-                "quantity": {
-                    "fraction": "2",
-                    "unit": "C"
-                },
-                "food": "water",
-                "notes": ""
-            },
-            {
-                "quantity": {
-                    "fraction": "2",
-                    "unit": "C"
-                },
-                "food": "apple juice",
-                "notes": ""
-            },
-            {
-                "quantity": {
-                    "fraction": "1",
-                    "unit": "tsp"
-                },
-                "food": "salt",
-                "notes": ""
-            },
-            {
-                "quantity": {
-                    "fraction": "2",
-                    "unit": "Tbsp"
-                },
-                "food": "molasses",
-                "notes": ""
-            },
-            {
-                "quantity": {
-                    "fraction": "1/2",
-                    "unit": "C"
-                },
-                "food": "ketchup",
-                "notes": ""
-            },
-            {
-                "quantity": {
-                    "fraction": "2",
-                    "unit": "tsp"
-                },
-                "food": "vinegar",
-                "notes": ""
-            },
-            {
-                "quantity": {
-                    "fraction": "1",
-                    "unit": "tsp"
-                },
-                "food": "mustard",
-                "notes": "dried"
             }
         ]
     },
@@ -19197,7 +19068,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "garlic",
+                "food": "garlic clove",
                 "notes": "cloves minced"
             },
             {
@@ -19213,7 +19084,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -19266,7 +19137,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "large chopped"
             },
             {
@@ -19274,7 +19145,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "chopped green chilies",
+                "food": "green chilies",
                 "notes": "can adjust to taste"
             },
             {
@@ -19282,7 +19153,7 @@
                     "fraction": "3",
                     "unit": ""
                 },
-                "food": "garlic",
+                "food": "garlic clove",
                 "notes": "cloves minced"
             },
             {
@@ -19290,7 +19161,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "chili powder",
+                "food": "chili",
                 "notes": ""
             },
             {
@@ -19391,7 +19262,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "quick-cooking oats",
+                "food": "oats",
                 "notes": "uncooked"
             },
             {
@@ -19407,7 +19278,7 @@
                     "fraction": "1/2",
                     "unit": "Tbsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -19423,7 +19294,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "tart cored &amp; chopped"
             }
         ]
@@ -19443,7 +19314,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": ""
             },
             {
@@ -19467,7 +19338,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": ""
             },
             {
@@ -19555,7 +19426,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "chicken breasts",
+                "food": "chicken",
                 "notes": "boneless &amp; skinless medium"
             },
             {
@@ -19571,7 +19442,7 @@
                     "fraction": "5",
                     "unit": "Tbsp"
                 },
-                "food": "apricot spread",
+                "food": "apricot jam",
                 "notes": "about 1/3 cup"
             },
             {
@@ -19623,7 +19494,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "thyme sprigs",
+                "food": "thyme",
                 "notes": "leaves removed and crushed"
             },
             {
@@ -19639,7 +19510,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -19647,7 +19518,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "mushroom",
+                "food": "mushrooms",
                 "notes": ""
             },
             {
@@ -19663,7 +19534,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "cloves of garlic",
+                "food": "garlic clove",
                 "notes": "crushed"
             }
         ]
@@ -19691,7 +19562,7 @@
                     "fraction": "2",
                     "unit": "C"
                 },
-                "food": "sliced strawberries",
+                "food": "strawberries",
                 "notes": ""
             },
             {
@@ -19699,7 +19570,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "grape juice",
+                "food": "grapes",
                 "notes": ""
             }
         ]
@@ -19760,7 +19631,7 @@
                     "fraction": "7/4",
                     "unit": "C"
                 },
-                "food": "bran cereal",
+                "food": "cereal",
                 "notes": ""
             },
             {
@@ -19768,7 +19639,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -19804,7 +19675,7 @@
                     "fraction": "1",
                     "unit": "lb"
                 },
-                "food": "whole wheat pasta shells",
+                "food": "pasta",
                 "notes": ""
             },
             {
@@ -19888,7 +19759,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -19932,7 +19803,7 @@
                     "fraction": "10",
                     "unit": "oz"
                 },
-                "food": "cream of mushroom soup",
+                "food": "mushrooms",
                 "notes": "1 can"
             },
             {
@@ -19956,7 +19827,7 @@
                     "fraction": "4",
                     "unit": "oz"
                 },
-                "food": "chopped green chiles",
+                "food": "green chilies",
                 "notes": "canned 1 can"
             },
             {
@@ -20000,7 +19871,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -20032,7 +19903,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -20040,7 +19911,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "onion powder",
+                "food": "onions",
                 "notes": ""
             }
         ]
@@ -20060,7 +19931,7 @@
                     "fraction": "6",
                     "unit": ""
                 },
-                "food": "ears of corn",
+                "food": "corn",
                 "notes": "about 3 cups"
             },
             {
@@ -20120,7 +19991,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "pear halves",
+                "food": "pear",
                 "notes": ""
             },
             {
@@ -20201,7 +20072,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "medium skinned and cored not cut into pieces"
             },
             {
@@ -20241,7 +20112,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "butter alternative spread",
+                "food": "butter",
                 "notes": "0 trans-fat or butter"
             }
         ]
@@ -20262,7 +20133,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "bananas",
+                "food": "banana",
                 "notes": "medium"
             },
             {
@@ -20298,7 +20169,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -20369,7 +20240,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "cloves garlic",
+                "food": "garlic clove",
                 "notes": "minced"
             },
             {
@@ -20421,7 +20292,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "medium"
             },
             {
@@ -20466,7 +20337,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "pineapple chunks",
+                "food": "pineapple",
                 "notes": ""
             },
             {
@@ -20474,7 +20345,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "peach",
+                "food": "peaches",
                 "notes": "cubed"
             },
             {
@@ -20526,7 +20397,7 @@
                     "fraction": "4",
                     "unit": "C"
                 },
-                "food": "rolled oats",
+                "food": "oats",
                 "notes": "oatmeal"
             },
             {
@@ -20654,7 +20525,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -20690,7 +20561,7 @@
                     "fraction": "1/8",
                     "unit": "C"
                 },
-                "food": "canned corn",
+                "food": "corn",
                 "notes": "drained 2 Tablespoons"
             },
             {
@@ -20698,7 +20569,7 @@
                     "fraction": "2",
                     "unit": "Tbsp"
                 },
-                "food": "chopped green chilies",
+                "food": "green chilies",
                 "notes": "drained"
             },
             {
@@ -20831,7 +20702,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "of coffee",
+                "food": "coffee",
                 "notes": "1/2 cup or 4 ounces - cooled to room temperature"
             },
             {
@@ -20839,7 +20710,7 @@
                     "fraction": "3",
                     "unit": ""
                 },
-                "food": "ice cubes",
+                "food": "ice",
                 "notes": ""
             },
             {
@@ -20884,7 +20755,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -20920,7 +20791,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "green bell pepper",
+                "food": "bell pepper",
                 "notes": ""
             },
             {
@@ -20928,7 +20799,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "green onion",
+                "food": "green onions",
                 "notes": "chopped"
             },
             {
@@ -21000,7 +20871,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "celery stalks",
+                "food": "celery stalk",
                 "notes": "cleaned and cut into 3-inch long pieces"
             },
             {
@@ -21008,7 +20879,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "creamy peanut butter",
+                "food": "peanut butter",
                 "notes": ""
             },
             {
@@ -21016,7 +20887,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "pears",
+                "food": "pear",
                 "notes": "cored and cut into chunks"
             }
         ]
@@ -21037,7 +20908,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "apple slices",
+                "food": "apples",
                 "notes": ""
             },
             {
@@ -21053,7 +20924,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "pear slices",
+                "food": "pear",
                 "notes": ""
             },
             {
@@ -21093,7 +20964,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "vanilla",
+                "food": "vanilla extract",
                 "notes": ""
             },
             {
@@ -21165,7 +21036,7 @@
                     "fraction": "3",
                     "unit": ""
                 },
-                "food": "pear halves",
+                "food": "pear",
                 "notes": ""
             },
             {
@@ -21173,7 +21044,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "raisin",
+                "food": "raisins",
                 "notes": ""
             }
         ]
@@ -21193,7 +21064,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "bananas",
+                "food": "banana",
                 "notes": ""
             },
             {
@@ -21209,7 +21080,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "crushed nuts",
+                "food": "nuts",
                 "notes": ""
             }
         ]
@@ -21245,7 +21116,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "chopped"
             },
             {
@@ -21261,7 +21132,7 @@
                     "fraction": "1/4",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "medium diced"
             },
             {
@@ -21269,7 +21140,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "frozen peas",
+                "food": "peas",
                 "notes": "thawed"
             },
             {
@@ -21277,7 +21148,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "Italian salad dressing",
+                "food": "italian dressing",
                 "notes": ""
             }
         ]
@@ -21313,7 +21184,7 @@
                     "fraction": "2",
                     "unit": "Tbsp"
                 },
-                "food": "granola cereal",
+                "food": "cereal",
                 "notes": ""
             },
             {
@@ -21321,7 +21192,7 @@
                     "fraction": "1/2",
                     "unit": ""
                 },
-                "food": "apple",
+                "food": "apples",
                 "notes": "sliced suggest Red Delicious apple"
             }
         ]
@@ -21342,7 +21213,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "iceberg lettuce leaves",
+                "food": "lettuce",
                 "notes": "large"
             },
             {
@@ -21366,7 +21237,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "medium shredded"
             },
             {
@@ -21410,7 +21281,7 @@
                     "fraction": "3/4",
                     "unit": "C"
                 },
-                "food": "cooked pasta",
+                "food": "pasta",
                 "notes": "in any shape"
             },
             {
@@ -21470,7 +21341,7 @@
                     "fraction": "4",
                     "unit": ""
                 },
-                "food": "chicken breasts",
+                "food": "chicken",
                 "notes": "boneless &amp; skinless"
             },
             {
@@ -21558,7 +21429,7 @@
                     "fraction": "12",
                     "unit": ""
                 },
-                "food": "egg whites",
+                "food": "eggs",
                 "notes": "1 1/2 cups"
             },
             {
@@ -21650,7 +21521,7 @@
                     "fraction": "3/2",
                     "unit": "Tbsp"
                 },
-                "food": "lite whipped topping",
+                "food": "whipped topping",
                 "notes": "can use 1-2 Tablespoons"
             }
         ]
@@ -21694,7 +21565,7 @@
                     "fraction": "1/4",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -21774,7 +21645,7 @@
                     "fraction": "1/3",
                     "unit": "C"
                 },
-                "food": "chopped pecans",
+                "food": "pecans",
                 "notes": ""
             },
             {
@@ -21826,7 +21697,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": ""
             },
             {
@@ -21860,98 +21731,6 @@
                 },
                 "food": "Parmesan cheese",
                 "notes": ""
-            }
-        ]
-    },
-    {
-        "title": "Stove Top Green Chile Chicken Enchiladas",
-        "source": "https://whatscooking.fns.usda.gov/recipes/supplemental-nutrition-assistance-program-snap/stove-top-green-chile-chicken-enchiladas",
-        "cuisines": [
-            "Latin American"
-        ],
-        "courses": [
-            "Main Dish"
-        ],
-        "ingredients": [
-            {
-                "quantity": {
-                    "fraction": "1",
-                    "unit": "Tbsp"
-                },
-                "food": "olive oil",
-                "notes": ""
-            },
-            {
-                "quantity": {
-                    "fraction": "2/3",
-                    "unit": ""
-                },
-                "food": "onion",
-                "notes": "chopped"
-            },
-            {
-                "quantity": {
-                    "fraction": "1/4",
-                    "unit": "C"
-                },
-                "food": "flour",
-                "notes": ""
-            },
-            {
-                "quantity": {
-                    "fraction": "5/2",
-                    "unit": "C"
-                },
-                "food": "chopped green chilies",
-                "notes": ""
-            },
-            {
-                "quantity": {
-                    "fraction": "2",
-                    "unit": "C"
-                },
-                "food": "chicken broth",
-                "notes": "low-sodium"
-            },
-            {
-                "quantity": {
-                    "fraction": "2",
-                    "unit": "C"
-                },
-                "food": "cooked",
-                "notes": "shredded chicken breast"
-            },
-            {
-                "quantity": {
-                    "fraction": "1/2",
-                    "unit": "tsp"
-                },
-                "food": "garlic powder",
-                "notes": ""
-            },
-            {
-                "quantity": {
-                    "fraction": "1",
-                    "unit": "Tbsp"
-                },
-                "food": "cornstarch",
-                "notes": ""
-            },
-            {
-                "quantity": {
-                    "fraction": "8",
-                    "unit": ""
-                },
-                "food": "corn tortillas",
-                "notes": "6 inch"
-            },
-            {
-                "quantity": {
-                    "fraction": "3/2",
-                    "unit": "C"
-                },
-                "food": "cheddar cheese",
-                "notes": "finely shredded"
             }
         ]
     },
@@ -21994,7 +21773,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "chopped onion",
+                "food": "onions",
                 "notes": ""
             },
             {
@@ -22026,7 +21805,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": ""
             }
         ]
@@ -22107,7 +21886,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "graham cracker",
+                "food": "graham crackers",
                 "notes": "broken in half"
             },
             {
@@ -22183,7 +21962,7 @@
                     "fraction": "6",
                     "unit": ""
                 },
-                "food": "iceberg lettuce leaves",
+                "food": "lettuce",
                 "notes": ""
             }
         ]
@@ -22203,7 +21982,7 @@
                     "fraction": "3",
                     "unit": "C"
                 },
-                "food": "crispy rice cereal",
+                "food": "cereal",
                 "notes": ""
             },
             {
@@ -22211,7 +21990,7 @@
                     "fraction": "3",
                     "unit": "C"
                 },
-                "food": "bran cereal",
+                "food": "cereal",
                 "notes": ""
             },
             {
@@ -22259,7 +22038,7 @@
                     "fraction": "1",
                     "unit": "tsp"
                 },
-                "food": "vanilla",
+                "food": "vanilla extract",
                 "notes": ""
             }
         ]
@@ -22287,7 +22066,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "tomato",
+                "food": "tomatoes",
                 "notes": "small or 2 grape tomatoes"
             }
         ]
@@ -22388,7 +22167,7 @@
                     "fraction": "4",
                     "unit": "C"
                 },
-                "food": "rolled oats",
+                "food": "oats",
                 "notes": "or whole wheat flour"
             },
             {
@@ -22396,7 +22175,7 @@
                     "fraction": "4/3",
                     "unit": "C"
                 },
-                "food": "non-fat dry milk",
+                "food": "dry milk",
                 "notes": ""
             },
             {
@@ -22404,7 +22183,7 @@
                     "fraction": "4",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -22464,7 +22243,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": ""
             },
             {
@@ -22472,7 +22251,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "vanilla",
+                "food": "vanilla extract",
                 "notes": ""
             }
         ]
@@ -22536,7 +22315,7 @@
                     "fraction": "2",
                     "unit": "Tbsp"
                 },
-                "food": "Italian dressing",
+                "food": "italian dressing",
                 "notes": "low-fat or olive oil"
             },
             {
@@ -22588,7 +22367,7 @@
                     "fraction": "2",
                     "unit": "C"
                 },
-                "food": "carrot",
+                "food": "carrots",
                 "notes": "or 3/4 pound regular carrots sliced"
             },
             {
@@ -22620,7 +22399,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -22628,7 +22407,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "pepper",
+                "food": "black pepper",
                 "notes": ""
             },
             {
@@ -22892,7 +22671,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "clove garlic",
+                "food": "garlic clove",
                 "notes": "minced"
             },
             {
@@ -22964,7 +22743,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "white rice",
+                "food": "rice",
                 "notes": "long-grain uncooked"
             },
             {
@@ -23004,7 +22783,7 @@
                     "fraction": "1/2",
                     "unit": "Tbsp"
                 },
-                "food": "ground cinnamon",
+                "food": "cinnamon",
                 "notes": ""
             }
         ]
@@ -23040,7 +22819,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "ground ginger",
+                "food": "ginger",
                 "notes": ""
             },
             {
@@ -23048,7 +22827,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -23124,7 +22903,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "cumin powder",
+                "food": "cumin",
                 "notes": ""
             },
             {
@@ -23156,7 +22935,7 @@
                     "fraction": "1/2",
                     "unit": ""
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "large chopped"
             }
         ]
@@ -23192,7 +22971,7 @@
                     "fraction": "5/4",
                     "unit": "Tbsp"
                 },
-                "food": "yeast",
+                "food": "dry yeast",
                 "notes": "dry active"
             },
             {
@@ -23200,7 +22979,7 @@
                     "fraction": "1/2",
                     "unit": "C"
                 },
-                "food": "non-fat dry milk powder",
+                "food": "dry milk",
                 "notes": ""
             },
             {
@@ -23208,7 +22987,7 @@
                     "fraction": "3/2",
                     "unit": "C"
                 },
-                "food": "warm water",
+                "food": "water",
                 "notes": ""
             },
             {
@@ -23276,7 +23055,7 @@
                     "fraction": "1",
                     "unit": "C"
                 },
-                "food": "potato",
+                "food": "potatoes",
                 "notes": "cooked peeled and diced"
             },
             {
@@ -23284,7 +23063,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "onion",
+                "food": "onions",
                 "notes": "chopped"
             },
             {
@@ -23360,7 +23139,7 @@
                     "fraction": "1/3",
                     "unit": "Tbsp"
                 },
-                "food": "dried minced onion",
+                "food": "dried onion",
                 "notes": ""
             },
             {
@@ -23420,7 +23199,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "jar spaghetti sauce",
+                "food": "spaghetti sauce",
                 "notes": "meatless low-sodium 24-ounce jar"
             },
             {
@@ -23444,7 +23223,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "slightly beaten"
             },
             {
@@ -23496,7 +23275,7 @@
                     "fraction": "3/2",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             },
             {
@@ -23520,7 +23299,7 @@
                     "fraction": "1",
                     "unit": ""
                 },
-                "food": "egg",
+                "food": "eggs",
                 "notes": "large"
             },
             {
@@ -23564,7 +23343,7 @@
                     "fraction": "6",
                     "unit": "tsp"
                 },
-                "food": "hot pepper sauce",
+                "food": "pepper sauce",
                 "notes": "or to taste"
             },
             {
@@ -23588,7 +23367,7 @@
                     "fraction": "2",
                     "unit": ""
                 },
-                "food": "chicken breast",
+                "food": "chicken",
                 "notes": "boneless and skinless all visible fat discarded about 4 ounces each"
             },
             {
@@ -23620,7 +23399,7 @@
                     "fraction": "1/2",
                     "unit": "tsp"
                 },
-                "food": "garlic powder",
+                "food": "garlic clove",
                 "notes": ""
             },
             {
@@ -23656,7 +23435,7 @@
                     "fraction": "1/4",
                     "unit": "C"
                 },
-                "food": "dry milk powder",
+                "food": "dry milk",
                 "notes": "non-fat instant"
             },
             {
@@ -23712,7 +23491,7 @@
                     "fraction": "2",
                     "unit": "tsp"
                 },
-                "food": "baking powder",
+                "food": "baking",
                 "notes": ""
             }
         ]
@@ -23748,7 +23527,7 @@
                     "fraction": "1",
                     "unit": "Tbsp"
                 },
-                "food": "catsup",
+                "food": "ketchup",
                 "notes": ""
             },
             {
