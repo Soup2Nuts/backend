@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+import datetime
 
 #Set to false to use actual database
 TEST_DATABASE = True
@@ -159,4 +160,8 @@ REST_FRAMEWORK = {
     # 'DEFAULT_PERMISSION_CLASSES': (
     #     'rest_framework.permissions.IsAuthenticated',
     # )
+}
+
+JWT_AUTH = {
+'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=60000)
 }
