@@ -14,7 +14,8 @@ import json
 @api_view(['GET'])
 def search_recipes(request, format=None):
     user = get_user(request)
-    # user = User.objects.all()[0]
+    if(type(user)!=User):
+        return HttpResponse(status=401)
     try:
         cuisines = request.data['cuisines']
     except:
@@ -73,6 +74,8 @@ class PantryItemViewSet(viewsets.ViewSet):
         for the currently authenticated user.
         """
         user = get_user(request)
+        if(type(user)!=User):
+            return HttpResponse(status=401)
         items = user.pantry.all()
         serializer = self.serializer_class(items, many=True)
         return Response(serializer.data)
@@ -82,6 +85,8 @@ class PantryItemViewSet(viewsets.ViewSet):
         #Get the foodItem if it exists
         food = get_object_or_404(FoodItem, pk=food_name)
         user = get_user(request)
+        if(type(user)!=User):
+            return HttpResponse(status=401)
         serializer = self.serializer_class(data={'item':food, 'owner':user.pk })
         if serializer.is_valid():
             serializer.save()
@@ -95,6 +100,8 @@ class PantryItemViewSet(viewsets.ViewSet):
         food_name = food_name.replace("+", " ")
         food = get_object_or_404(FoodItem, pk=food_name)
         user = get_user(request)
+        if(type(user)!=User):
+            return HttpResponse(status=401)
         items = PantryItem.objects.all().filter(item=food, owner=user.pk)
         if(len(items) <= 0):
             return Response(status=status.HTTP_400_BAD_REQUEST)
@@ -115,6 +122,8 @@ class FavoriteRecipeViewSet(viewsets.ViewSet):
         for the currently authenticated user.
         """
         user = get_user(request)
+        if(type(user)!=User):
+            return HttpResponse(status=401)
         items = user.favorites.all()
         serializer = self.serializer_class(items, many=True)
         return Response(serializer.data)
@@ -124,6 +133,8 @@ class FavoriteRecipeViewSet(viewsets.ViewSet):
         #Get the Recipe if it exists
         recipe = get_object_or_404(Recipe, pk=recipe_name)
         user = get_user(request)
+        if(type(user)!=User):
+            return HttpResponse(status=401)
         new_fav = FavoriteRecipe(recipe=recipe, owner=user)
         if new_fav:
             new_fav.save()
@@ -136,6 +147,8 @@ class FavoriteRecipeViewSet(viewsets.ViewSet):
         recipe_name = recipe_name.replace("+", " ")
         recipe = get_object_or_404(Recipe, pk=recipe_name)
         user = get_user(request)
+        if(type(user)!=User):
+            return HttpResponse(status=401)
         recipes = FavoriteRecipe.objects.all().filter(recipe=recipe, owner=user.pk)
         if(len(recipes) <= 0):
             return Response(status=status.HTTP_400_BAD_REQUEST)
