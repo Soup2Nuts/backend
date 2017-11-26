@@ -48,4 +48,5 @@ urlpatterns = [
     url(r'^auth/', include('djoser.urls.jwt')),
     url(r'^api/pantry/', pantry_bindings, name='api-pantry'),
     url(r'^api/favorites/', favorites_bindings, name='api-favorites'),
+    url(r'^api/search', search_recipes),
 ]

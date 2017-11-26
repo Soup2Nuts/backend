@@ -1,12 +1,37 @@
 from django.shortcuts import get_object_or_404
 from rest_framework import viewsets, permissions, views, status
-from rest_framework.decorators import permission_classes, detail_route, list_route
+from rest_framework.decorators import permission_classes, api_view
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+from django.http import JsonResponse
 from django.core.exceptions import PermissionDenied
+from django.forms import model_to_dict
 from .utils import *
 from .models import *
 from .serializers import *
+import json
+
+@api_view(['GET'])
+def search_recipes(request, format=None):
+    user = get_user(request)
+    # user = User.objects.all()[0]
+    try:
+        cuisines = request.data['cuisines']
+    except:
+        cuisines = None
+    try:
+        courses = request.data['courses']
+    except:
+        courses = None
+    recipes = get_all_valid_recipes(user, cuisines, courses)
+    value = []
+    for recipe in recipes:
+        recipe_serializer = RecipeSerializer(recipe)
+        recipe_dict = dict(recipe_serializer.data)
+        recipe_dict['substitutions'] =  get_real_substitutions(get_substitutions_made(user, recipe), recipe_dict['ingredients'])
+        recipe_dict['numberOfSubstitutions'] = len(recipe_dict['substitutions'])
+        value.append(recipe_dict)
+    return JsonResponse(value, safe=False)
 
 class FoodItemViewSet(viewsets.ModelViewSet):
     """ ViewSet for viewing and editing Food Item objects """

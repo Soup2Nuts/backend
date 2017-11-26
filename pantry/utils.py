@@ -2,8 +2,7 @@ from .models import *
 from rest_framework_jwt.utils import jwt_decode_handler
 from django.core.exceptions import PermissionDenied
 from django.db.models import Q
-# import django
-# django.setup()
+from fractions import Fraction
 
 #Decode the user from the request's header
 def get_user(request):
@@ -72,7 +71,27 @@ def get_substitutions_made(user, recipe):
             print('"%s" can not make recipe "%s"'%user %recipe.title)
             return None
         distinct_subs.append(temp[0])
-    # print(recipe)
-    # print(distinct_subs)
-    # print(len(distinct_subs))
     return distinct_subs
+
+#Input: array of substitutions and a collection ingredients in their final order
+#Returns the actual substitutions made to a set of ingredients
+def get_real_substitutions(substitutions, ingredients):
+    real_subs = {}
+    for i in range(0, len(ingredients)):
+        for s in range(0, len(substitutions)):
+            if ingredients[i]['name']==substitutions[s].original_food.name:
+                subs = []
+                for substitute_food in substitutions[s].substitute_foods.all():
+                    sub = {}
+                    info = ingredients[i]['quantity'].split(maxsplit= 1)
+                    frac = Fraction(info[0])
+                    frac2 = Fraction(str(substitute_food.ratio))
+                    sub['quantity'] = str(frac*frac2)
+                    if len(info)>=2:
+                        sub['quantity']+= ' ' + str(info[1])
+                    sub['name'] = str(substitute_food.substitute_food.name)
+                    subs.append(sub)
+                if(len(subs) != 0):
+                    real_subs[i]=subs
+                break
+    return real_subs
