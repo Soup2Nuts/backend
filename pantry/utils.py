@@ -3,6 +3,7 @@ from rest_framework_jwt.utils import jwt_decode_handler
 from django.core.exceptions import PermissionDenied
 from django.db.models import Q
 from fractions import Fraction
+from django.http import HttpResponse
 
 #Decode the user from the request's header
 def get_user(request):
@@ -12,7 +13,8 @@ def get_user(request):
         user_id = jwt_decode_handler(token)['user_id']
         return User.objects.get(pk=user_id)
     except:
-        raise PermissionDenied("Request has an invalid or expired token")
+        #raise PermissionDenied("Request has an invalid or expired token")
+        return HttpResponse(status=401)
 
 #Returns a queryset of all FoodItems in the user's pantry
 def get_foods_in_pantry(user):
