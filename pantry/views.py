@@ -12,16 +12,20 @@ from .serializers import *
 import json
 
 @api_view(['GET'])
-def search_recipes(request, format=None):
+def search_recipes(request):
     user = get_user(request)
     if(type(user)!=User):
         return HttpResponse(status=401)
     try:
-        cuisines = request.data['cuisines']
+        cuisines = request.GET.getlist('cuisines')
+        if(len(cuisines)==0):
+            cuisines = None
     except:
         cuisines = None
     try:
-        courses = request.data['courses']
+        courses = request.GET.getlist('courses')
+        if(len(courses)==0):
+            courses = None
     except:
         courses = None
     recipes = get_all_valid_recipes(user, cuisines, courses)
