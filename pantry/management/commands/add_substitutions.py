@@ -22,7 +22,7 @@ class Command(BaseCommand):
                 break
         for sub in substitutions:
             valid_sub = True
-            if(len(sub[0].strip())==0):
+            if(len(sub[0].strip())==0 or sub[0].strip()=='egg' or 'large egg' in sub[0].strip()):
                 valid_sub = False
                 break
             original_food, created = FoodItem.objects.get_or_create(pk=sub[0].strip())

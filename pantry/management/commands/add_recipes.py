@@ -19,7 +19,7 @@ class Command(BaseCommand):
             except Exception as e:
                 self.stdout.write(str(e) + ' : failed to load "%s"' %text_file)
                 break
-        for recipe in recipes:
+        for recipe in recipes[]:
             r, created = Recipe.objects.get_or_create(title=recipe['title'])
             r.title = recipe['title']
             r.source = recipe['source']

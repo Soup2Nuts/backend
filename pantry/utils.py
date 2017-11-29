@@ -50,6 +50,10 @@ def get_all_unavailable_foods(user):
 #and are at least of one of specified cuisines and at least one of the specified courses
 def get_all_valid_recipes(user, cuisines=None, courses=None):
     unavailable_foods = get_all_unavailable_foods(user)
+    return get_all_valid_recipes_helper(unavailable_foods, cuisines, courses)
+
+#Helper method for get_all_valid_recipes
+def get_all_valid_recipes_helper(unavailable_foods, cuisines, courses):
     q = ~Q(ingredients__name__in = unavailable_foods)
     if(cuisines==None and courses==None):
         return Recipe.objects.filter(q)
@@ -57,7 +61,7 @@ def get_all_valid_recipes(user, cuisines=None, courses=None):
         return Recipe.objects.filter(q, courses__name__in=courses)
     if(courses==None):
         return Recipe.objects.filter(q, cuisines__name__in=cuisines)
-    return Recipe.objects.filter(q, cuisines__name__in=cuisines, courses__name__in=courses)
+    return Recipe.objects.filter(q, cuisines__name__in=cuisines, courses__name__in=courses).distinct()
 
 #Returns a queryset of all of the substitutions needed to be made for the specified recipe to be made from the FoodItem in the specified user's pantry
 def get_substitutions_made(user, recipe):

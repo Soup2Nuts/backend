@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 import datetime
 
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 #Set to false to use actual database
 TEST_DATABASE = True
 
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_jwt',
     'djoser',
+    'django_nose',
 ]
 
 MIDDLEWARE = [
@@ -158,3 +160,5 @@ JWT_AUTH = {
     'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=60000),
     'JWT_AUTH_HEADER_PREFIX': 'Bearer',
 }
+
+NOSE_ARGS = ['--nocapture', '--nologcapture',]
