@@ -45,7 +45,7 @@ class SearchUtilTests(TestCase):
         cuisines = Cuisine.objects.exclude(name='American')
         unavailable_foods = FoodItem.objects.none()
         result = get_all_valid_recipes_helper(unavailable_foods=unavailable_foods, cuisines=cuisines, courses=courses)
-        correct = Recipe.objects.filter(cuisines__name__in=cuisines)
+        correct = Recipe.objects.filter(cuisines__name__in=cuisines).distinct()
         self.assertEqual(len(result), len(correct))
         self.assertQuerysetEqual(result, map(repr, correct), ordered=False)
 
@@ -57,8 +57,6 @@ class SearchUtilTests(TestCase):
         unavailable_foods = FoodItem.objects.none()
         result = get_all_valid_recipes_helper(unavailable_foods=unavailable_foods, cuisines=cuisines, courses=courses)
         correct = Recipe.objects.filter(courses__name__in=courses, cuisines__name__in=cuisines).distinct()
-        print(len(result))
-        print(len(correct))
         self.assertEqual(len(result), len(correct))
         self.assertQuerysetEqual(result, map(repr, correct), ordered=False)
 

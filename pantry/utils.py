@@ -32,7 +32,7 @@ def get_foods_not_in_pantry(user):
 def get_valid_substitutions(user):
     unavailable_foods = get_foods_not_in_pantry(user)
     q = ~Q(substitute_foods__substitute_food__in = unavailable_foods)
-    return Substitution.objects.filter(q)
+    return Substitution.objects.filter(q).distinct()
 
 #Returns all foods items produced by valid substitutions from the user's pantry or in the user's pantry
 def get_all_available_foods(user):
@@ -56,11 +56,11 @@ def get_all_valid_recipes(user, cuisines=None, courses=None):
 def get_all_valid_recipes_helper(unavailable_foods, cuisines, courses):
     q = ~Q(ingredients__name__in = unavailable_foods)
     if(cuisines==None and courses==None):
-        return Recipe.objects.filter(q)
+        return Recipe.objects.filter(q).distinct()
     if(cuisines==None):
-        return Recipe.objects.filter(q, courses__name__in=courses)
+        return Recipe.objects.filter(q, courses__name__in=courses).distinct()
     if(courses==None):
-        return Recipe.objects.filter(q, cuisines__name__in=cuisines)
+        return Recipe.objects.filter(q, cuisines__name__in=cuisines).distinct()
     return Recipe.objects.filter(q, cuisines__name__in=cuisines, courses__name__in=courses).distinct()
 
 #Returns a queryset of all of the substitutions needed to be made for the specified recipe to be made from the FoodItem in the specified user's pantry
