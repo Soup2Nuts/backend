@@ -67,7 +67,7 @@ class SearchUtilTests(TestCase):
         result = get_all_valid_recipes_helper(unavailable_foods=unavailable_foods, cuisines=None, courses=None)
         self.assertQuerysetEqual(result, map(repr, Recipe.objects.none()), ordered=False)
 
-class SearchView(TestCase):
+class SearchViewTests(TestCase):
 
     #Used to time individual tests and add a valid token to the auth header
     def setUp(self):
