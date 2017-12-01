@@ -95,19 +95,19 @@ class SearchViewTests(TestCase):
         self.user.delete()
 
     #Test response for a user without a token
-    def test_search_recipes1(self):
+    def test_search_recipes_1(self):
         response = self.client.get('/api/search/', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
     #Test response for a user with a token
-    def test_search_recipes2(self):
+    def test_search_recipes_2(self):
         response = self.client.get('/api/search/', HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 200)
 
     #Test response time for a user with a token and every FoodItem in their pantry
     #High stress test
     @skipIf(fast, 'Stress tests are slow')
-    def test_search_recipes3(self):
+    def test_search_recipes_3(self):
         all_foods = FoodItem.objects.all()
         for f in all_foods:
             PantryItem.objects.create(owner = self.user, item=f)
