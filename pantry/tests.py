@@ -69,7 +69,7 @@ class SearchUtilTests(TestCase):
 
 class SearchView(TestCase):
 
-    #Used to time individual tests
+    #Used to time individual tests and add a valid token to the auth header
     def setUp(self):
         self.client = Client()
         self.username = 'john8888'
@@ -96,7 +96,7 @@ class SearchView(TestCase):
         response = self.client.get('/api/search/', HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 200)
 
-    #Test response for a user with a token and every FoodItem in their pantry
+    #Test response time for a user with a token and every FoodItem in their pantry
     #High stress test
     def test_search_recipes3(self):
         all_foods = FoodItem.objects.all()
@@ -105,6 +105,5 @@ class SearchView(TestCase):
         search_time = time.time()
         response = self.client.get('/api/search/', HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 200)
-        # self.assertJSONEqual(response.content)
         t = time.time() - search_time
         print ("Search Time: %s: %.3f"%(self.id(), t))
