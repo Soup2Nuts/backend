@@ -77,6 +77,9 @@ class PantryView(TestCase):
         payload = utils.jwt_payload_handler(self.user)
         token = utils.jwt_encode_handler(payload)
         self.auth = 'Bearer {0}'.format(token)
+        all_foods = FoodItem.objects.all()
+        for f in all_foods:
+            PantryItem.objects.create(owner = self.user, item=f)
         self.startTime = time.time()
 
     #Used to time individual tests
@@ -118,7 +121,7 @@ class PantryView(TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_favorites_add_1(self):
-        response = self.client.post('api/favorites/put?format=json/', HTTP_AUTHORIZATION='not a real token')
+        response = self.client.post('api/favorites/put/', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
     def test_favorites_add_2(self):
