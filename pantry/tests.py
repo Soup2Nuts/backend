@@ -4,6 +4,10 @@ from .models import *
 from .utils import *
 import time
 from rest_framework_jwt import utils
+from unittest import skipIf
+
+#Set to false to include stress tests
+fast = True
 
 def setup():
     management.call_command('loaddata', 'initial_data.json', verbosity=0)
@@ -24,6 +28,7 @@ class SearchUtilTests(TestCase):
 
     #Tests get_all_valid_recipes_helper
     #User has every food item in their pantry and is not filtering by cuisines or courses
+    @skipIf(fast, 'Stress tests are slow')
     def test_get_all_valid_recipes_helper_1(self):
         unavailable_foods = FoodItem.objects.none()
         result = get_all_valid_recipes_helper(unavailable_foods=unavailable_foods, cuisines=None, courses=None)
@@ -31,6 +36,7 @@ class SearchUtilTests(TestCase):
 
     #Tests get_all_valid_recipes_helper
     #User has all foods in pantry and has filtered results only by courses
+    @skipIf(fast, 'Stress tests are slow')
     def test_get_all_valid_recipes_helper_2(self):
         courses = Course.objects.filter(name__in=['Lunch', 'Dinner', 'American'])
         cuisines = None
@@ -40,6 +46,7 @@ class SearchUtilTests(TestCase):
 
     #Tests get_all_valid_recipes_helper
     #User has all foods in pantry and has filtered results only by cuisines
+    @skipIf(fast, 'Stress tests are slow')
     def test_get_all_valid_recipes_helper_3(self):
         courses = None
         cuisines = Cuisine.objects.exclude(name='American')
@@ -51,6 +58,7 @@ class SearchUtilTests(TestCase):
 
     #Tests get_all_valid_recipes_helper
     #User has all foods in pantry and has filtered results by both courses and cuisines
+    @skipIf(fast, 'Stress tests are slow')
     def test_get_all_valid_recipes_helper_4(self):
         courses = Course.objects.exclude(name='Breakfast')
         cuisines = Cuisine.objects.filter(name='American')
@@ -121,11 +129,10 @@ class PantryView(TestCase):
         all_foods = FoodItem.objects.all()
         for f in all_foods:
             PantryItem.objects.create(owner = self.user, item=f)
-        response = self.client.delete('/api/pantry/delete', {'food_name': FoodItem.objects[1]}, HTTP_AUTHORIZATION='not a real token')
+        response = self.client.delete('/api/pantry/delete', {'food_name': 'sugar'}, HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
-class SearchView(TestCase):
-
+class SearchViewTests(TestCase):
     #Used to time individual tests and add a valid token to the auth header
     def setUp(self):
         self.client = Client()
@@ -155,6 +162,7 @@ class SearchView(TestCase):
 
     #Test response time for a user with a token and every FoodItem in their pantry
     #High stress test
+    @skipIf(fast, 'Stress tests are slow')
     def test_search_recipes_3(self):
         all_foods = FoodItem.objects.all()
         for f in all_foods:
