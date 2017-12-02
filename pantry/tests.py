@@ -129,7 +129,7 @@ class PantryView(TestCase):
         all_foods = FoodItem.objects.all()
         for f in all_foods:
             PantryItem.objects.create(owner = self.user, item=f)
-        response = self.client.delete('/api/pantry/delete', {'food_name': 'sugar'}, HTTP_AUTHORIZATION='not a real token')
+        response = self.client.delete('/api/pantry/delete/', {'food_name': 'sugar'}, HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
 class SearchViewTests(TestCase):
