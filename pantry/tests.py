@@ -67,6 +67,73 @@ class SearchUtilTests(TestCase):
         result = get_all_valid_recipes_helper(unavailable_foods=unavailable_foods, cuisines=None, courses=None)
         self.assertQuerysetEqual(result, map(repr, Recipe.objects.none()), ordered=False)
 
+class PantryView(TestCase):
+    #Used to time individual tests and add a valid token to the auth header
+    def setUp(self):
+        self.client = Client()
+        self.username = 'bigboi99'
+        self.email = 'bigboi99@example.com'
+        self.user = User.objects.create_user(self.username, self.email)
+        payload = utils.jwt_payload_handler(self.user)
+        token = utils.jwt_encode_handler(payload)
+        self.auth = 'Bearer {0}'.format(token)
+        self.startTime = time.time()
+
+    #Used to time individual tests
+    def tearDown(self):
+        t = time.time() - self.startTime
+        print ("%s: %.3f"%(self.id(), t))
+        self.user.delete()
+
+    def test_pantry_1(self):
+        response = self.client.get('api/pantry?format=json/', HTTP_AUTHORIZATION='not a real token')
+        self.assertEqual(response.status_code, 401)
+
+    def test_pantry_2(self):
+        response = self.client.get('api/pantry?format=json/', HTTP_AUTHORIZATION=self.auth)
+        self.assertEqual(response.status_code, 200)
+
+    def test_pantry_put_1(self):
+        response = self.client.post('api/pantry/put?format=json/', HTTP_AUTHORIZATION='not a real token')
+        self.assertEqual(response.status_code, 401)
+
+    def test_pantry_put_2(self):
+        response = self.client.post('api/pantry/put?format=json/', HTTP_AUTHORIZATION=self.auth)
+        self.assertEqual(response.status_code, 200)
+
+    def test_pantry_delete_1(self):
+        response = self.client.delete('api/pantry/delete/', HTTP_AUTHORIZATION='not a real token')
+        self.assertEqual(response.status_code, 401)
+
+    def test_pantry_delete_2(self):
+        response = self.client.delete('api/pantry/delete/', HTTP_AUTHORIZATION=self.auth)
+        self.assertEqual(response.status_code, 200)
+
+    def test_favorites_1(self):
+        response = self.client.get('api/favorites?format=json/', HTTP_AUTHORIZATION='not a real token')
+        self.assertEqual(response.status_code, 401)
+
+    def test_favorites_2(self):
+        response = self.client.get('api/favorites?format=json/', HTTP_AUTHORIZATION=self.auth)
+        self.assertEqual(response.status_code, 200)
+
+    def test_favorites_add_1(self):
+        response = self.client.post('api/favorites/put?format=json/', HTTP_AUTHORIZATION='not a real token')
+        self.assertEqual(response.status_code, 401)
+
+    def test_favorites_add_2(self):
+        response = self.client.post('api/favorites/put?format=json/', HTTP_AUTHORIZATION=self.auth)
+        self.assertEqual(response.status_code, 200)
+
+    def test_favorites_delete_1(self):
+        response = self.client.delete('api/favorites/delete/', HTTP_AUTHORIZATION='not a real token')
+        self.assertEqual(response.status_code, 401)
+
+    def test_favorites_delete_2(self):
+        response = self.client.delete('api/favorites/delete/', HTTP_AUTHORIZATION=self.auth)
+        self.assertEqual(response.status_code, 200)
+
+
 class SearchView(TestCase):
 
     #Used to time individual tests and add a valid token to the auth header
@@ -87,18 +154,18 @@ class SearchView(TestCase):
         self.user.delete()
 
     #Test response for a user without a token
-    def test_search_recipes1(self):
+    def test_search_recipes_1(self):
         response = self.client.get('/api/search/', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
     #Test response for a user with a token
-    def test_search_recipes2(self):
+    def test_search_recipes_2(self):
         response = self.client.get('/api/search/', HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 200)
 
     #Test response time for a user with a token and every FoodItem in their pantry
     #High stress test
-    def test_search_recipes3(self):
+    def test_search_recipes_3(self):
         all_foods = FoodItem.objects.all()
         for f in all_foods:
             PantryItem.objects.create(owner = self.user, item=f)
