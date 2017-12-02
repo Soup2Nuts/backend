@@ -99,9 +99,7 @@ class PantryItemViewSet(viewsets.ViewSet):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request):
-        food_name = request.META['QUERY_STRING']
-        food_name = food_name.split('=', 1)[1]
-        food_name = food_name.replace("+", " ")
+        food_name = request.GET.get('food_name')
         food = get_object_or_404(FoodItem, pk=food_name)
         user = get_user(request)
         if(type(user)!=User):
@@ -146,9 +144,7 @@ class FavoriteRecipeViewSet(viewsets.ViewSet):
         return Response(status=status.HTTP_400_BAD_REQUEST)
 
     def delete(self, request):
-        recipe_name = request.META['QUERY_STRING']
-        recipe_name = recipe_name.split('=', 1)[1]
-        recipe_name = recipe_name.replace("+", " ")
+        recipe_name = request.GET.get('recipe_name')
         recipe = get_object_or_404(Recipe, pk=recipe_name)
         user = get_user(request)
         if(type(user)!=User):
