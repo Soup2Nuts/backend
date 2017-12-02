@@ -5,6 +5,7 @@ from .utils import *
 import time
 from rest_framework_jwt import utils
 from unittest import skipIf
+from django.utils.http import urlencode
 
 #Set to false to include stress tests
 fast = True
@@ -129,8 +130,8 @@ class PantryView(TestCase):
         all_foods = FoodItem.objects.all()
         for f in all_foods:
             PantryItem.objects.create(owner = self.user, item=f)
-        response = self.client.delete('/api/pantry/delete/', {'food_name': 'sugar'}, HTTP_AUTHORIZATION='not a real token')
-        self.assertEqual(response.status_code, 401)
+        response = self.client.delete('/api/pantry/delete', QUERY_STRING=urlencode({'food_name':'sugar'}), HTTP_AUTHORIZATION=self.auth)
+        self.assertEqual(response.status_code, 204)
 
 class SearchViewTests(TestCase):
     #Used to time individual tests and add a valid token to the auth header
