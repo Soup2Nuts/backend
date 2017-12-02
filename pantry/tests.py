@@ -129,8 +129,29 @@ class PantryView(TestCase):
         all_foods = FoodItem.objects.all()
         for f in all_foods:
             PantryItem.objects.create(owner = self.user, item=f)
-        response = self.client.delete('/api/pantry/delete/', {'food_name': 'sugar'}, HTTP_AUTHORIZATION='not a real token')
+        response = self.client.delete('/api/pantry/delete?food_name=black+beans', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
+
+    def test_pantry_delete_2(self):
+        all_foods = FoodItem.objects.all()
+        for f in all_foods:
+            PantryItem.objects.create(owner = self.user, item=f)
+        response = self.client.delete('/api/pantry/delete?food_name=black+beans', HTTP_AUTHORIZATION=self.auth)
+        self.assertEqual(response.status_code, 204)
+
+    def test_favorites_delete_1(self):
+        all_recipes = Recipe.objects.all()
+        for f in all_recipes:
+            FavoriteRecipe.objects.create(owner = self.user, recipe=f)
+        response = self.client.delete('/api/favorites/delete?recipe_name=Apple+Chunk+Cake', HTTP_AUTHORIZATION='not a real token')
+        self.assertEqual(response.status_code, 401)
+
+    def test_favorites_delete_2(self):
+        all_recipes = Recipe.objects.all()
+        for f in all_recipes:
+            FavoriteRecipe.objects.create(owner = self.user, recipe=f)
+        response = self.client.delete('/api/favorites/delete?recipe_name=Apple+Chunk+Cake', HTTP_AUTHORIZATION=self.auth)
+        self.assertEqual(response.status_code, 204)
 
 class SearchViewTests(TestCase):
     #Used to time individual tests and add a valid token to the auth header
