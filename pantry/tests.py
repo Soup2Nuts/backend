@@ -77,9 +77,6 @@ class PantryView(TestCase):
         payload = utils.jwt_payload_handler(self.user)
         token = utils.jwt_encode_handler(payload)
         self.auth = 'Bearer {0}'.format(token)
-        all_foods = FoodItem.objects.all()
-        for f in all_foods:
-            PantryItem.objects.create(owner = self.user, item=f)
         self.startTime = time.time()
 
     #Used to time individual tests
@@ -89,53 +86,43 @@ class PantryView(TestCase):
         self.user.delete()
 
     def test_pantry_1(self):
-        response = self.client.get('api/pantry?format=json/', HTTP_AUTHORIZATION='not a real token')
+        response = self.client.get('/api/pantry/', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
     def test_pantry_2(self):
-        response = self.client.get('api/pantry?format=json/', HTTP_AUTHORIZATION=self.auth)
-        self.assertEqual(response.status_code, 200)
-
-    def test_pantry_put_1(self):
-        response = self.client.post('api/pantry/put?format=json/', HTTP_AUTHORIZATION='not a real token')
-        self.assertEqual(response.status_code, 401)
-
-    def test_pantry_put_2(self):
-        response = self.client.post('api/pantry/put?format=json/', HTTP_AUTHORIZATION=self.auth)
-        self.assertEqual(response.status_code, 200)
-
-    def test_pantry_delete_1(self):
-        response = self.client.delete('api/pantry/delete/', HTTP_AUTHORIZATION='not a real token')
-        self.assertEqual(response.status_code, 401)
-
-    def test_pantry_delete_2(self):
-        response = self.client.delete('api/pantry/delete/', HTTP_AUTHORIZATION=self.auth)
+        response = self.client.get('/api/pantry/', HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 200)
 
     def test_favorites_1(self):
-        response = self.client.get('api/favorites?format=json/', HTTP_AUTHORIZATION='not a real token')
+        response = self.client.get('/api/favorites/', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
     def test_favorites_2(self):
-        response = self.client.get('api/favorites?format=json/', HTTP_AUTHORIZATION=self.auth)
+        response = self.client.get('/api/favorites/', HTTP_AUTHORIZATION=self.auth)
+        self.assertEqual(response.status_code, 200)
+
+    def test_pantry_put_1(self):
+        response = self.client.post('/api/pantry/put', {'food_name': 'sugar'}, HTTP_AUTHORIZATION='not a real token')
+        self.assertEqual(response.status_code, 401)
+
+    def test_pantry_put_2(self):
+        response = self.client.post('/api/pantry/put', {'food_name': 'sugar'}, HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 200)
 
     def test_favorites_add_1(self):
-        response = self.client.post('api/favorites/put/', HTTP_AUTHORIZATION='not a real token')
+        response = self.client.post('/api/favorites/put', {'recipe_name': 'Apple Cranberry Salad Toss'}, HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
     def test_favorites_add_2(self):
-        response = self.client.post('api/favorites/put?format=json/', HTTP_AUTHORIZATION=self.auth)
-        self.assertEqual(response.status_code, 200)
+        response = self.client.post('/api/favorites/put', {'recipe_name': 'Apple Cranberry Salad Toss'}, HTTP_AUTHORIZATION=self.auth)
+        self.assertEqual(response.status_code, 201)
 
-    def test_favorites_delete_1(self):
-        response = self.client.delete('api/favorites/delete/', HTTP_AUTHORIZATION='not a real token')
+    def test_pantry_delete_1(self):
+        all_foods = FoodItem.objects.all()
+        for f in all_foods:
+            PantryItem.objects.create(owner = self.user, item=f)
+        response = self.client.delete('/api/pantry/delete', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
-
-    def test_favorites_delete_2(self):
-        response = self.client.delete('api/favorites/delete/', HTTP_AUTHORIZATION=self.auth)
-        self.assertEqual(response.status_code, 200)
-
 
 class SearchView(TestCase):
 
