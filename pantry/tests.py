@@ -90,10 +90,10 @@ class ModelTest(TestCase):
     #Test test_recipe
     #Test whether a recipe model prints correctly
     def test_recipe(self):
-        recipe = Recipe(title='Test recipe', source='www.recipe.com')
-        recipe.cuisines.add(Cuisine.objects.all()[:2])
-        recipe.cuisines.add(Course.objects.all()[:2])
-        recipe.ingredients.add(Ingredient.objects.all()[:7])
+        recipe = Recipe.objects.create(title='Test recipe', source='www.recipe.com')
+        recipe.cuisines=Cuisine.objects.all()[:1]
+        recipe.courses=Course.objects.all()[:1]
+        recipe.ingredients=Ingredient.objects.all()[:3]
         made_string = 'Title: ' + recipe.title + '\n'
         made_string += 'Source: ' + recipe.source + '\n'
         made_string += 'Cuisines: ' + str(recipe.cuisines.all()) + '\n'
@@ -101,7 +101,7 @@ class ModelTest(TestCase):
         made_string += 'Ingredients:\n'
         for i in recipe.ingredients.all():
             made_string += str(i) + '\n'
-        test_string = ""    
+        test_string = ""
         test_string += str(recipe)
         self.assertEqual(test_string, made_string)
 
