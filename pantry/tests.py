@@ -76,7 +76,37 @@ class SearchUtilTests(TestCase):
         result = get_all_valid_recipes_helper(unavailable_foods=unavailable_foods, cuisines=None, courses=None)
         self.assertQuerysetEqual(result, map(repr, Recipe.objects.none()), ordered=False)
 
+class ModelTest(TestCase):
+
+    #Used to time individual tests
+    def setUp(self):
+        self.startTime = time.time()
+
+    #Used to time individual tests
+    def tearDown(self):
+        t = time.time() - self.startTime
+        print ("%s: %.3f"%(self.id(), t))
+
+    #Test test_recipe
+    #Test whether a recipe model prints correctly
+    def test_recipe(self):
+        recipe = Recipe.objects.create(title='Test recipe', source='www.recipe.com')
+        recipe.cuisines=Cuisine.objects.all()[:1]
+        recipe.courses=Course.objects.all()[:1]
+        recipe.ingredients=Ingredient.objects.all()[:3]
+        made_string = 'Title: ' + recipe.title + '\n'
+        made_string += 'Source: ' + recipe.source + '\n'
+        made_string += 'Cuisines: ' + str(recipe.cuisines.all()) + '\n'
+        made_string += 'Courses: ' + str(recipe.courses.all()) + '\n'
+        made_string += 'Ingredients:\n'
+        for i in recipe.ingredients.all():
+            made_string += str(i) + '\n'
+        test_string = ""
+        test_string += str(recipe)
+        self.assertEqual(test_string, made_string)
+
 class PantryView(TestCase):
+
     #Used to time individual tests and add a valid token to the auth header
     def setUp(self):
         self.client = Client()
@@ -179,6 +209,7 @@ class PantryView(TestCase):
         self.assertEqual(response.status_code, 204)
 
 class SearchViewTests(TestCase):
+
     #Used to time individual tests and add a valid token to the auth header
     def setUp(self):
         self.client = Client()
@@ -196,16 +227,19 @@ class SearchViewTests(TestCase):
         print ("%s: %.3f"%(self.id(), t))
         self.user.delete()
 
+    #Test test_search_recipes
     #Test response for a user without a token
     def test_search_recipes_1(self):
         response = self.client.get('/api/search/', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
+    #Test test_search_recipes
     #Test response for a user with a token
     def test_search_recipes_2(self):
         response = self.client.get('/api/search/', HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 200)
 
+    #Test test_search_recipes
     #Test response time for a user with a token and every FoodItem in their pantry
     #High stress test
     @skipIf(fast, 'Stress tests are slow')
