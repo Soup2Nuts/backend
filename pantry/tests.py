@@ -76,7 +76,39 @@ class SearchUtilTests(TestCase):
         result = get_all_valid_recipes_helper(unavailable_foods=unavailable_foods, cuisines=None, courses=None)
         self.assertQuerysetEqual(result, map(repr, Recipe.objects.none()), ordered=False)
 
+class ModelTest(TestCase):
+
+    #Used to time individual tests
+    def setUp(self):
+        self.startTime = time.time()
+
+    #Used to time individual tests
+    def tearDown(self):
+        t = time.time() - self.startTime
+        print ("%s: %.3f"%(self.id(), t))
+
+    #Test test_recipe
+    #Test whether a recipe model prints correctly
+    def test_recipe(self):
+        recipe = Recipe
+        recipe.title = "Test recipe"
+        recipe.source = "www.recipe.com"
+        recipe.cuisines = Cuisine.objects.filter(name='American')
+        recipe.courses = Course.objects.filter(name='Breakfast')
+        recipe.ingredients = Ingredient.objects.all()
+        made_string = 'Title: ' + recipe.title + '\n'
+        made_string += 'Source: ' + recipe.source + '\n'
+        made_string += 'Cuisines: ' + str(recipe.cuisines.all()) + '\n'
+        made_string += 'Courses: ' + str(recipe.courses.all()) + '\n'
+        made_string += 'Ingredients:\n'
+        for i in recipe.ingredients.all():
+            made_string += str(i) + '\n'
+        test_string = ""    
+        test_string += str(recipe)
+        self.assertEqual(test_string, made_string)
+
 class PantryView(TestCase):
+
     #Used to time individual tests and add a valid token to the auth header
     def setUp(self):
         self.client = Client()
@@ -94,38 +126,56 @@ class PantryView(TestCase):
         print ("%s: %.3f"%(self.id(), t))
         self.user.delete()
 
+    #Tests test_pantry
+    #Test response to access the pantry for user without a token
     def test_pantry_1(self):
         response = self.client.get('/api/pantry/', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
+    #Tests test_pantry
+    #Test response to access the pantry for user with a token
     def test_pantry_2(self):
         response = self.client.get('/api/pantry/', HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 200)
 
+    #Tests test_favorites
+    #Test response to access favorites for user without a token
     def test_favorites_1(self):
         response = self.client.get('/api/favorites/', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
+    #Tests test_favorites
+    #Test response to access favorites for user with a token
     def test_favorites_2(self):
         response = self.client.get('/api/favorites/', HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 200)
 
+    #Tests test_pantry_put
+    #Test response to add item to the pantry for user without a token
     def test_pantry_put_1(self):
         response = self.client.post('/api/pantry/put', {'food_name': 'sugar'}, HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
+    #Tests test_pantry_put
+    #Test response to add item to the pantry for user with a token
     def test_pantry_put_2(self):
         response = self.client.post('/api/pantry/put', {'food_name': 'sugar'}, HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 200)
 
+    #Tests test_favorites_add
+    #Test response to add a recipe to favorites for user without a token
     def test_favorites_add_1(self):
         response = self.client.post('/api/favorites/put', {'recipe_name': 'Apple Cranberry Salad Toss'}, HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
+    #Tests test_favorites_add
+    #Test response to add a recipe to favorites for user with a token
     def test_favorites_add_2(self):
         response = self.client.post('/api/favorites/put', {'recipe_name': 'Apple Cranberry Salad Toss'}, HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 201)
 
+    #Tests test_pantry_delete
+    #Test response to delete an item from the pantry for user without a token
     def test_pantry_delete_1(self):
         all_foods = FoodItem.objects.all()
         for f in all_foods:
@@ -133,7 +183,8 @@ class PantryView(TestCase):
         response = self.client.delete('/api/pantry/delete?food_name=black+beans', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
-
+    #Tests test_pantry_delete
+    #Test response to delete an item from the pantry for user with a token
     def test_pantry_delete_2(self):
         all_foods = FoodItem.objects.all()
         for f in all_foods:
@@ -141,6 +192,8 @@ class PantryView(TestCase):
         response = self.client.delete('/api/pantry/delete?food_name=black+beans', HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 204)
 
+    #Tests test_favorites_delete
+    #Test response to delete a recipe from favorites for user without a token
     def test_favorites_delete_1(self):
         all_recipes = Recipe.objects.all()
         for f in all_recipes:
@@ -148,6 +201,8 @@ class PantryView(TestCase):
         response = self.client.delete('/api/favorites/delete?recipe_name=Apple+Chunk+Cake', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
+    #Tests test_favorites_delete
+    #Test response to delete a recipe from favorites for user with a token
     def test_favorites_delete_2(self):
         all_recipes = Recipe.objects.all()
         for f in all_recipes:
@@ -156,6 +211,7 @@ class PantryView(TestCase):
         self.assertEqual(response.status_code, 204)
 
 class SearchViewTests(TestCase):
+
     #Used to time individual tests and add a valid token to the auth header
     def setUp(self):
         self.client = Client()
@@ -173,16 +229,19 @@ class SearchViewTests(TestCase):
         print ("%s: %.3f"%(self.id(), t))
         self.user.delete()
 
+    #Test test_search_recipes
     #Test response for a user without a token
     def test_search_recipes_1(self):
         response = self.client.get('/api/search/', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
+    #Test test_search_recipes
     #Test response for a user with a token
     def test_search_recipes_2(self):
         response = self.client.get('/api/search/', HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 200)
 
+    #Test test_search_recipes
     #Test response time for a user with a token and every FoodItem in their pantry
     #High stress test
     @skipIf(fast, 'Stress tests are slow')
