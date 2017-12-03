@@ -94,38 +94,56 @@ class PantryView(TestCase):
         print ("%s: %.3f"%(self.id(), t))
         self.user.delete()
 
+    #Tests test_pantry
+    #Test response to access the pantry for user without a token
     def test_pantry_1(self):
         response = self.client.get('/api/pantry/', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
+    #Tests test_pantry
+    #Test response to access the pantry for user with a token
     def test_pantry_2(self):
         response = self.client.get('/api/pantry/', HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 200)
 
+    #Tests test_favorites
+    #Test response to access favorites for user without a token
     def test_favorites_1(self):
         response = self.client.get('/api/favorites/', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
+    #Tests test_favorites
+    #Test response to access favorites for user with a token
     def test_favorites_2(self):
         response = self.client.get('/api/favorites/', HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 200)
 
+    #Tests test_pantry_put
+    #Test response to add item to the pantry for user without a token
     def test_pantry_put_1(self):
         response = self.client.post('/api/pantry/put', {'food_name': 'sugar'}, HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
+    #Tests test_pantry_put
+    #Test response to add item to the pantry for user with a token
     def test_pantry_put_2(self):
         response = self.client.post('/api/pantry/put', {'food_name': 'sugar'}, HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 200)
 
+    #Tests test_favorites_add
+    #Test response to add a recipe to favorites for user without a token
     def test_favorites_add_1(self):
         response = self.client.post('/api/favorites/put', {'recipe_name': 'Apple Cranberry Salad Toss'}, HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
+    #Tests test_favorites_add
+    #Test response to add a recipe to favorites for user with a token
     def test_favorites_add_2(self):
         response = self.client.post('/api/favorites/put', {'recipe_name': 'Apple Cranberry Salad Toss'}, HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 201)
 
+    #Tests test_pantry_delete
+    #Test response to delete an item from the pantry for user without a token
     def test_pantry_delete_1(self):
         all_foods = FoodItem.objects.all()
         for f in all_foods:
@@ -133,7 +151,8 @@ class PantryView(TestCase):
         response = self.client.delete('/api/pantry/delete?food_name=black+beans', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
-
+    #Tests test_pantry_delete
+    #Test response to delete an item from the pantry for user with a token
     def test_pantry_delete_2(self):
         all_foods = FoodItem.objects.all()
         for f in all_foods:
@@ -141,6 +160,8 @@ class PantryView(TestCase):
         response = self.client.delete('/api/pantry/delete?food_name=black+beans', HTTP_AUTHORIZATION=self.auth)
         self.assertEqual(response.status_code, 204)
 
+    #Tests test_favorites_delete
+    #Test response to delete a recipe from favorites for user without a token
     def test_favorites_delete_1(self):
         all_recipes = Recipe.objects.all()
         for f in all_recipes:
@@ -148,6 +169,8 @@ class PantryView(TestCase):
         response = self.client.delete('/api/favorites/delete?recipe_name=Apple+Chunk+Cake', HTTP_AUTHORIZATION='not a real token')
         self.assertEqual(response.status_code, 401)
 
+    #Tests test_favorites_delete
+    #Test response to delete a recipe from favorites for user with a token
     def test_favorites_delete_2(self):
         all_recipes = Recipe.objects.all()
         for f in all_recipes:
