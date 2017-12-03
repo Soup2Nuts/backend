@@ -7,8 +7,8 @@ from rest_framework_jwt import utils
 from unittest import skipIf
 from django.utils.http import urlencode
 
-#Set to false to include stress tests
-fast = True
+#Set to False to include stress tests
+fast = False
 
 def setup():
     management.call_command('loaddata', 'initial_data.json', verbosity=0)
