@@ -90,12 +90,7 @@ class ModelTest(TestCase):
     #Test test_recipe
     #Test whether a recipe model prints correctly
     def test_recipe(self):
-        recipe = Recipe
-        recipe.title = "Test recipe"
-        recipe.source = "www.recipe.com"
-        recipe.cuisines = Cuisine.objects.filter(name='American')
-        recipe.courses = Course.objects.filter(name='Breakfast')
-        recipe.ingredients = Ingredient.objects.all()
+        recipe = Recipe(title='Test recipe', source='www.recipe.com', cuisines=Cuisine.objects.all()[:1], courses=Course.objects.all()[:1], ingredients=Ingredient.objects.all()[:3])
         made_string = 'Title: ' + recipe.title + '\n'
         made_string += 'Source: ' + recipe.source + '\n'
         made_string += 'Cuisines: ' + str(recipe.cuisines.all()) + '\n'
